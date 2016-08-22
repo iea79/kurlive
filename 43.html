@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Клиника Женского Здоровья</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="style/style.css" type="text/css" />
+	
+	<script src="http://yandex.st/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+	<link rel="stylesheet" href="js/jquery.arcticmodal-0.3.css">
+	
+<script type="text/javascript">
+<!--
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+// -->
+</script>
+
+<script>
+function op(id)
+	
+	{
+	
+		if (document.getElementById('ss'+id).style.display == "none")
+		
+			{document.getElementById('ss'+id).style.display = "block";
+			document.getElementById('ss_'+id).style.display = "none"
+			}
+		
+	}
+
+function ex(id)
+	
+	{
+	
+		if (document.getElementById('ss'+id).style.display == "block")
+		
+			{document.getElementById('ss'+id).style.display = "none";
+			document.getElementById('ss_'+id).style.display = "block"
+			}
+		
+	}	
+
+</script>
+
+<script>$('#exampleModal').arcticmodal();</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<div class="header">
+		<div class = "header_top">
+		
+			<div class = "baner">
+				<a href = "#" alt = "" title = ""><img src = "images/banner.jpg" alt = "" title = ""/></a>
+			</div>
+			<div class = "vh_reg">
+				<form action="#">
+					<input type="text" id="login" placeholder="логин" name="username">
+					<input type="password"  placeholder="пароль" name="password">
+					<a href="#" class="registration m-dotted" id="#example1" onclick="$('#exampleModal1').arcticmodal()">регистрация</a>
+					<button class = "vhod">вход</button>
+				</form>
+			</div>
+		</div>
+		<div class = "header_bottom">
+			<div class = "logo">
+				<a href = "#"><img src = "images/logo.png" /></a>
+			</div>
+			<div class = "head_centr">
+				<div class = "serch">
+					<div class="region">
+						<a href="#">Регион</a>: <span>Москва</span>
+					</div>
+						<div class="search-unit">
+							<div class = "search_p"><a href="#">расширенный поиск</a></div>
+							<input type="text" class = "in_search"><div class = "btn_serch"><button>поиск</button></div>
+					</div>
+				</div>
+				<div class = "menu">
+					<ul class="sddm">
+						  <li><a href="#" class = "active">Главная</a>
+								
+							</li>
+							<li><a href="#">Мнения</a>
+								
+							</li>
+							<li><a href="#">Новости</a>
+								
+							</li>
+							<li><a href="#">Болезни</a>
+					
+							</li>
+							<li><a href="#">Клиники</a>
+								
+							</li>
+							<li><a href="#">Врачи</a>
+								
+							</li>
+							<li><a href="#" onmouseover="mopen('m1')" onmouseout="mclosetime()">Еще</a>
+								<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+								<a href="#">Истории выздоровлений</a>
+								<a href="#">Советы здоровым</a>
+								<a href="#">Форум</a>
+								<a href="#">Объявления</a>
+								</div>
+							</li>
+						</ul>
+						<div style="clear:both"></div>
+				</div>
+			</div>
+			<div class = "banner2">
+				<a href = "#"><img src = "images/banner2.jpg"/></a>
+			</div>
+		</div>
+	</div><!-- .header-->
+		
+	<div class="middle">
+
+		<div class="container">
+			<div class="content">
+				<div class = "kl_inf">
+					<h1>Клиника Женского Здоровья</h1>
+					<div class = "logo_klinik">
+						<img src = "images/logo_big_klin.png" />
+					</div>
+					<div class = "map_klinik">
+						<img src = "images/maps.jpg"/>
+					</div>
+					<div class = "info_clinik">
+						<div><span>Специализация:</span> многопрофильная</div>
+						<div><span>Адрес:</span> ул. Китайская 234</div>
+						<div><span>Часы работы:</span> 800-2100</div>
+						<div><span>Сайт:</span> www.site.ru</div>
+					</div>
+					<h2>Описание:</h2>
+						<div class = "news_detal">
+							<p>Самонаблюдение, например, последовательно. Однако, исследователи постоянно сталкиваются с тем, что психосоматика вероятна. Действие, несмотря на внешние воздействия,гомогенно выбирает интеракционизм, Гоббс одним из первых осветил эту проблему с позиций психологии. Очевидно, что страх отчуждает социометрический импульс, здесь описывается централизующий процесс или создание нового центра личности.</p> 
+							<p>Интеллектиллюстрирует онтогенез речи, таким образом, 
+							стратегия поведения, выгодная отдельному человеку, ведет к коллективному проигрышу. Но так как книга Фридмана адресована руководителям и работникам образования, то есть лидерство осознаёт ролевой архетип, следовательно тенденция к конформизму связана с 
+							менее низким интеллектом.</p>
+							<p>
+							Психе иллюстрирует онтогенез речи, независимо от психического состояния пациента. Страх разрушаем. Восприятие заметно дает субъект, в полном соответствии с основными законами развития человека. Бессознательное зеркально интегрирует психоанализ, также 
+							это подчеркивается в труде Дж.Морено "Театр Спонтанности". Рефлексия, в первом приближении, осознаёт понимающий закон, следовательно основной закон психофизики: ощущение изменяется пропорционально логарифму раздражителя.
+							</p>
+							<p>Тест, как бы это ни казалось парадоксальным, неравномерен. Субъект невменяем по всем трансакционным параметрам, что
+							пространственно отражает экзистенциальный аутизм, хотя Уотсон это отрицал. Онтогенез речи интегрирует институциональный стимул, следовательно основной закон психофизики: ощущение изменяется пропорционально логарифму раздражителя . 
+							Спонтанности". </p>
+							<p>Когда мы были маленькими, любили строить дома для уличных кошек в палисаднике возле подъезда. </p>
+							<p>Мальчишки бегали к продуктовому магазину за деревянными ящиками, девчонки мастерили миски из картонных молочных пакетов, у родителей выпрашивались ненужные подстилки, и вот так из ящиков, травы и кусков ситца мы сооружали дворовую гостиницу для братьев наших меньших. 
+							И казалось нам, что мы вершим большое, важное дело: жилище для кошек, где им будет не холодно спать ночами. 
+							Так мы радовались, пока в наш дом на первый этаж не переехала.  Картонки были выброшены в урну.</p>
+						</div>
+					
+						<div class = "koments">
+							<h3 class = "kom_title">Отзывы (3):</h3>
+							<a href = "#" class = "add_koment">оставить свой отзыв</a>
+							<div style="clear:both"></div>
+							<div class = "koment_wr">
+								<div class="sen_data">
+									24 октября 2013
+								</div>
+								<div class = "name">
+									Иванов Иван:
+								</div>
+								<div class = "koment_text">
+								Тест, как бы это ни казалось парадоксальным, неравномерен. Субъект 
+								пространственно отражает экзистенциальный аутизм, хотя Уотсон это 
+								отрицал. Онтогенез речи интегрирует институциональный стимул, 
+								следовательно основной закон психофизики. Текст, как бы это казалось.
+									<a id="ss_1" class = "open" onclick="op('1');">развернуть</a>
+									<div id="ss1" style="display:none;">
+										Тест, как бы это ни казалось парадоксальным, неравномерен. Субъект 
+										пространственно отражает экзистенциальный аутизм, хотя Уотсон это 
+										отрицал. Онтогенез речи интегрирует институциональный стимул, 
+										следовательно основной закон психофизики. Текст, как бы это казалось.
+										<a class = "close" onclick="ex('1');">свернуть</a>
+									</div>
+									
+								</div>
+								<a href  = "#" class = "reply">ответить</a>
+							</div>
+							<div class = "koment_wr">
+								<div class="sen_data">
+									24 октября 2013
+								</div>
+								<div class = "name">
+									Иванов Иван:
+								</div>
+								<div class = "koment_text">
+								Тест, как бы это ни казалось парадоксальным, неравномерен. Субъект 
+								пространственно отражает экзистенциальный аутизм, хотя Уотсон это 
+								отрицал. Онтогенез речи интегрирует институциональный стимул, 
+								следовательно основной закон психофизики. Текст, как бы это казалось.
+									<a id="ss_2" class = "open" onclick="op('2');">развернуть</a>
+									<div id="ss2" style="display:none;">
+										Тест, как бы это ни казалось парадоксальным, неравномерен. Субъект 
+										пространственно отражает экзистенциальный аутизм, хотя Уотсон это 
+										отрицал. Онтогенез речи интегрирует институциональный стимул, 
+										следовательно основной закон психофизики. Текст, как бы это казалось.
+										<a class = "close" onclick="ex('2');">свернуть</a>
+									</div>
+									
+								</div>
+								<a href  = "#"  class = "reply">ответить</a>
+							</div>
+							<div class = "koment_wr">
+								<div class="sen_data">
+									24 октября 2013
+								</div>
+								<div class = "name">
+									Иванов Иван:
+								</div>
+								<div class = "koment_text">
+								Тест, как бы это ни казалось парадоксальным, неравномерен. Субъект 
+								пространственно отражает экзистенциальный аутизм, хотя Уотсон это 
+								отрицал. Онтогенез речи интегрирует институциональный стимул, 
+								следовательно основной закон психофизики. Текст, как бы это казалось.
+									<a id="ss_3" class = "open" onclick="op('3');">развернуть</a>
+									<div id="ss3" style="display:none;">
+										Тест, как бы это ни казалось парадоксальным, неравномерен. Субъект 
+										пространственно отражает экзистенциальный аутизм, хотя Уотсон это 
+										отрицал. Онтогенез речи интегрирует институциональный стимул, 
+										следовательно основной закон психофизики. Текст, как бы это казалось.
+										<a class = "close" onclick="ex('3');">свернуть</a>
+									</div>
+									
+								</div>
+								<a href  = "#" class = "reply">ответить</a>
+							</div>
+						</div>
+					
+						<div class="add-comment">
+                            <h6>Добавить отзыв</h6>
+                            <form action="#">
+                                <label>Введите текст отзыва:</label><br>
+                                <textarea cols="53" rows="10"></textarea>
+                                <a href="#" class="forum">форум</a>
+								<div class = "btn_kom">
+									<button>отправить</button>
+								</div>
+                            </form>
+                        </div>
+					
+				
+				</div>
+			</div><!-- .content-->
+		</div><!-- .container-->
+
+		<div class="left-sidebar">
+			<div class = "news_kliniks">
+				<h3>Новости клиники</h3>
+				<a href = "#">СМ-Клиник приняла участие в Конференции врачей-урологов</a>
+				<a href = "#">В СМ-Клинике Акция – 3 анализ в подарок</a>
+				<a href = "#">Окулиста СМ-Клиники наградили Почетной грамотой Союза офтальмологов</a>
+			</div>
+			
+			 <div class="calendar">
+                        <h3>Акции клиники</h3>
+                        <div class="months">
+                         <a href="#" class="left"></a>
+                        <div>Октябрь 2014</div>
+                        <a href="#" class="right"></a>
+                        </div>
+                        <div class="days">
+                            <span>Пт</span>
+                            <span>Вт</span>
+                            <span>Ср</span>
+                            <span>Чт</span>
+                            <span>Пт</span>
+                            <span>Сб</span>
+                            <span>Вс</span>
+                        </div>
+                        <div class="pagination">
+                            <a href="#" class="left"></a>
+                            <ul class="clearfix">
+                                <li>2</li>
+                                <li class="active">3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                            </ul>
+                            <a href="#" class="right"></a>
+                        </div>
+                        <div class="dev-unit">
+                            <a href="#">
+                                <span class="date">13.04</span>
+                                <span class="p">Скидка инвалидам на УЗИ.</span>
+                            </a>
+                            <a href="#">
+                                
+                                <span class="p">Сегодня: Акций нет.</span>
+                            </a>
+                        </div>
+						
+						<a href = "#" class = "but">Все события</a>
+                    </div>
+					
+					
+				<img class = "ban" src="images/240x200.png" alt="">
+				<img class = "ban" src="images/240x200.png" alt="">
+				
+				
+				
+		</div><!-- .left-sidebar -->
+
+		<div class="right-sidebar">
+			<div class = "banner3">
+				<a href = "#"><img src = "images/banner3.jpg" /></a>
+			</div>
+			
+			
+			<div class="survey">
+                    <h3>Рейтинг клиники</h3>
+						<div class = "votes">
+							Всего: 100 голосов
+						</div>
+						<div class = "rating_img">
+							<img src = "images/diagramma.png" />
+						</div>
+						<div class = "legend">
+							<div><span class = "legend_color1"></span>каждую неделю - <span>20 голосов (20%)</span></div>
+							<div><span class = "legend_color2"></span>раз в год - <span>50 голосов (50%)</span></div>
+							<div><span class = "legend_color3"></span>1 раз в месяц - <span>30 голосов (30%)</span></div>
+						</div>
+                        <h6>Как часто вы показываетесь терапевту?</h6>
+                        <form action="#">
+                                <input type="radio" name="q" id="q1"><label>каждую неделю</label><br>
+                            <input type="radio" name="q" id="q2"><label>1 раз в месяц</label><br>
+                            <input type="radio" name="q" id="q3"><label>раз в год</label><br>
+                        <a href="#">голосовать</a>
+						
+                    </form>
+            </div>
+			
+			
+			
+			
+		</div>
+	</div><!-- .right-sidebar -->
+	
+	<div class="footer">
+		<div class = "foot_top">
+			<div class="foot-nav">
+				<h4>Объявления</h4>
+				<ul>
+					<li><a href="#">Продам</a></li>
+					<li class = "separator"></li>
+					<li><a href="#">Куплю</a></li>
+					<li class = "separator"></li>
+					<li><a href="#">Приму в дар</a></li>
+					<li class = "separator"></li>
+					<li><a href="#">Отдам даром</a></li>
+					<li class = "separator"></li>
+					<li><a href="#">Окажу услугу</a></li>
+				</ul>
+			</div>
+			<div style="clear:both"></div>
+			<div class="categories">
+				<ul>
+					<li><a href="#">Бады и лекарства</a> <div class = "separ"></div> 7</li>
+					<li><a href="#">Бады и лекарства</a> <span class = "separ"></span> 7</li>
+					<li><a href="#">Бады и лекарства</a> <span class = "separ"></span> 7</li>
+					<li><a href="#">Курортно-санаторное лечение</a> <span class = "separ"></span> 3</li>
+					<li><a href="#">Курортно-санаторное лечение</a> <span class = "separ"></span> 3</li>
+					<li><a href="#">Курортно-санаторное лечение</a> <span class = "separ"></span> 3</li>
+					<li><a href="#">Мебель и оборудование</a><span class = "separ"></span> 12</li>
+					<li><a href="#">Мебель и оборудование</a><span class = "separ"></span> 12</li>
+					<li><a href="#">Мебель и оборудование</a><span class = "separ"></span> 12</li>
+				</ul>                            
+			</div>
+		</div>
+		<div class="foot_bottom">
+                    <div class="metrika">
+                        <img src="images/metrika.png" alt="">
+                    </div>
+                    <ul>
+                        <li><a href="#">о портале</a></li>
+                        <li><a href="#">реклама</a></li>
+                        <li><a href="#">правила</a></li>
+                        <li><a href="#">контакты</a></li>
+                    </ul>
+                    <div class="copy">
+                        <span>Пациент прав</span>
+                        <span>2012-2013</span>
+                    </div>
+                    <div class="map">
+                        <a href="#">карта сайта</a>
+                    </div>
+                </div>
+	</div><!-- .footer -->
+	
+	</div><!-- .middle-->
+
+	
+
+
+
+<div class="g-hidden">
+<div class="box-modal" id="exampleModal1">
+   <div>
+         <h3>Регистрация</h3>
+         <form action="#">
+             <div class="nickname-unit">
+                 <label>Никнейм <span>*</span></label>
+                 <input type="text">
+             </div>
+             <div class="password-unit">
+                 <div class="password">
+                     <label>Пароль <span>*</span></label>
+                     <input type="password">                 
+                 </div>
+                 <div class="password-repeat">
+                     <label>Подтвердите пароль <span>*</span></label>
+                     <input type="password">                 
+                 </div>
+                 <div class="email-unit">
+                     <label>E-mail <span>*</span></label>
+                 <input type="text">
+                 </div>
+                 <div class="gender">
+                     <label>Ваш пол:</label>
+                     <input type="radio" name="gender"><span>Мужчина</span><br>
+                     <input type="radio" name="gender"><span>Женщина</span>
+                 </div>
+                 <div class="captcha">
+                      <label>Введите символ с картинки <span>*</span></label>
+                     <img src="images/captcha-pic.png" alt="">    <input type="text"><a href="#">обновить</a>
+                 </div>
+             </div>
+             <p>Поля отмеченные <span>*</span> обязательны к заполнению</p>
+             <button>отправить</button>
+         </form>
+      </div>
+</div>
+</div>
+
+<div class="g-hidden">
+<div class="box-modal" id="exampleModal2">
+ <h3>Добавить свою историю</h3>
+         <form action="#">
+             <div class="login">
+                 <p>Пожалуйста авторизуйтесь:</p>
+                 <label>Логин</label>
+                 <input type="text">
+                 <label>Пароль</label>
+                 <input type="password">
+                 <a href="#" data-reveal-id="myModal">Регистрация</a>
+                 <a href="#">Забыли пароль</a>
+             </div>
+             <div class="text">
+                 <label>Текст</label>
+                 <textarea>
+                     
+                 </textarea>
+             </div>
+             <div class="upload-foto">
+                 <a href="#">Прикрепить фотографии</a>
+                 <img src="images/stories-pic.png" alt="">
+                 <img src="images/stories-pic.png" alt="">
+                 <img src="images/stories-pic.png" alt="">
+                 <img src="images/stories-pic.png" alt="">
+             </div>
+             <div class="contact">
+                 <label>Ваши контакты для уточнения информации (на сайте не отображаются)</label>
+                 <textarea>
+                     
+                 </textarea>
+             </div>
+             <div class="captcha">
+                      <label>Введите символ с картинки <span></span></label>
+                     <img src="images/captcha-pic.png" alt="">    <input type="text"><a href="#">обновить</a>
+                </div>
+                <button>отправить</button>
+         </form>
+</div>
+</div>
+
+
+
+</body>
+</html>
