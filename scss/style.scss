@@ -443,7 +443,7 @@ button,.btn {
 	    }
 	}
 	.serch_box {
-		margin-bottom: 11px;
+		margin-bottom: 9px;
 	}
 }
 
@@ -476,7 +476,13 @@ button,.btn {
 	}
 }
 
-
+.autorization_link {
+	margin-bottom: 38px;
+	a {
+		margin-right: 19px;
+		font-size: 12px;
+	}
+}
 
 .vh_reg{
     vertical-align: top;
@@ -702,7 +708,7 @@ button,.btn {
 	@extend %clear_a;
 	width: 747px;
 	&_left {
-		width: 485px;
+		width: 493px;
 		float: left;
 		img {
 			display: block;
@@ -720,7 +726,7 @@ button,.btn {
 	}
 	&_right {
 		float: right;
-		width: 250px;
+		width: 243px;
 	}
 	.shadow_boxes {
 		height: 395px;

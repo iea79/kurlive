@@ -401,7 +401,7 @@ button:hover, .btn:hover {
   margin-bottom: 10px;
 }
 .header .serch_box {
-  margin-bottom: 11px;
+  margin-bottom: 9px;
 }
 
 .logo {
@@ -431,6 +431,14 @@ button:hover, .btn:hover {
 }
 .serch_box .btn_serch:hover {
   opacity: .8;
+}
+
+.autorization_link {
+  margin-bottom: 38px;
+}
+.autorization_link a {
+  margin-right: 19px;
+  font-size: 12px;
 }
 
 .vh_reg {
@@ -655,7 +663,7 @@ button:hover, .btn:hover {
   width: 747px;
 }
 .general_thems_left {
-  width: 485px;
+  width: 493px;
   float: left;
 }
 .general_thems_left img {
@@ -673,7 +681,7 @@ button:hover, .btn:hover {
 }
 .general_thems_right {
   float: right;
-  width: 250px;
+  width: 243px;
 }
 .general_thems .shadow_boxes {
   height: 395px;
