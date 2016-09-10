@@ -251,10 +251,12 @@ img {
 }
 
 .wrapper {
-	width: 1000px;
+	max-width: 1390px;
+	min-width: 990px;
 	margin: 0 auto;
-	@extend %clear_a;
 	height: auto;
+	padding: 0 5px;
+	@extend %clear_a;
 }
 // Input text and textarea ================================================
 input:not([type]),
@@ -295,6 +297,9 @@ textarea {
 	font-family: $main_font_family;
 	color: #1e1d1d;
 	font-size: 11px;
+	&:focus {
+		color: transparent;
+	}
 }
 
 
@@ -412,17 +417,50 @@ button,.btn {
 	@include columns-text(300px, 3, 40px, 1px, solid, #000);
 }
 
+.pagination {
+	margin: 10px 0;
+	@extend %clear_a;
+	li {
+		display:inline-block;
+		text-align: center;
+		margin-right:-4px;
+		a {
+			display: block;
+			min-width: 18px;
+			line-height: 18px;
+			background-color: white;
+			color: #1e1d1d;
+			font-size: 12px;
+			font-weight: 700;
+			&:hover {
+			}
+			&.active {
+				text-decoration: none;
+				border: 1px solid $color_title;
+				@include border-radius(4px);
+				@include box-shadow(inset 0 0 0 2px rgba(255, 255, 255, 0.2), inset 0 1px 2px white);
+				cursor: default;
+				&:hover {
+					
+				}
+			}
+		}
+	}
+}
+
+
+
 
 /* Header
 -----------------------------------------------------------------------------*/
 .header {
-	padding-bottom: 5px;
+	padding-bottom: 11px;
 	border-bottom: 7px solid #6e4682;
 	@extend %clear_a;
 	&_left {
 		float: left;
 		margin-bottom: 8px;
-		width: 768px;
+		width: 74.700000000000003%;
 		&_img {
 			margin-bottom: 9px;
 			display: block;
@@ -433,8 +471,9 @@ button,.btn {
 	}
 	&_right {
 		float: right;
-		width: 193px;
+		width: 25.300000000000001%;
 		padding-top: 13px;
+		padding-left: 19px;
 	    &>* {
 	    	vertical-align: top;
 	    }
@@ -459,14 +498,14 @@ button,.btn {
 	position: relative;
 	input {
 		width: 100%;
-		padding-right: 37px;
+		padding-right: 28px;
 	}
 	.btn_serch {
 		position: absolute;
 		right: 0;
 		top: 0;
 		border: none;
-		width: 27px;
+		width: 28px;
 		background: image-url('search.png') no-repeat center center;
 		background-color: transparent;
 		display: inline-block;
@@ -550,19 +589,20 @@ button,.btn {
 }
 
 .header_nav {
-	@include columns-text(auto, 4, 10px, 0, solid, #000);
-	width: 573px;
+	@include columns-text(100px, 5, 10px, 0, solid, #000);
+	overflow: hidden;
+	padding-top: 18px;
 	.navbar__item {
 		display: block;
 		margin-top: 3px;
 	}
 	.navbar__link {
-		display: inline-block;
-		padding: 2px 5px;
-		white-space: nowrap;
+		padding: 2px 4px;;;
 		border: 1px solid #6e4682;
 		font-size: 12px;
 		color: #333;
+		white-space: nowrap;
+		display: inline-block;
 		@include border-radius(3px);
 		&:hover,&.active {
 			background-color: #6e4682;
@@ -579,7 +619,7 @@ button,.btn {
 .middle {
 	width: 100%;
 	position: relative;
-	padding: 30px 0px 47px 0px;
+	padding: 20px 0px 47px 0px;
 	@extend %clear_a;
 }
 .middle:after {
@@ -591,20 +631,19 @@ button,.btn {
 	// width: 100%;
 	overflow: hidden;
 	// float: left;
-	width: 517px;
+	width: 49.200000000000003%;
 }
 
 .content{
-	// padding: 0 253px 0 253px;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-right: 0px;
+	margin-left: 0px;
 	.shadow_boxes {
 		clear: both;
-		margin-bottom: 10px;
+		margin-bottom: 15px;
 		@extend %clear_b;
 		&.w_50 {
 			clear: none;
-			margin-bottom: 10px;
+			margin-bottom: 15px;
 			.klinick_r {
 				width: 100%;
 			}
@@ -648,7 +687,7 @@ button,.btn {
 		font-size: 18px;
 		font-weight: 400;
 		padding-bottom: 2px;
-		margin-bottom: 15px;
+		margin-bottom: 12px;
 		border-bottom: 3px solid;
 		&-warning {
 			&:before {
@@ -677,7 +716,7 @@ button,.btn {
 		}
 	}
 	&.w_50 {
-		width: 243px;
+		width: 48.600000000000001%;
 		// float: left;
 		@extend %clear_all;
 		margin-top: 0;
@@ -685,10 +724,10 @@ button,.btn {
 }
 
 .news_list {
-	padding: 0;
+	padding: 4px 0;
 	li {
 		border-bottom: 2px solid #f6f6f6;
-		padding-bottom: 8px;
+		padding-bottom: 9px;
 		margin-bottom: 11px;
 	}
 	&_date {
@@ -708,11 +747,11 @@ button,.btn {
 // Home page ---------------------------------------
 .general_thems {
 	float: left;
-	margin-bottom: 14px;
+	margin-bottom: 19px;
 	@extend %clear_a;
-	width: 747px;
+	width: 74.599999999999994%;
 	&_left {
-		width: 493px;
+		width: 66%;
 		float: left;
 		img {
 			display: block;
@@ -730,7 +769,7 @@ button,.btn {
 	}
 	&_right {
 		float: right;
-		width: 243px;
+		width: 32%;
 	}
 	.shadow_boxes {
 		height: 395px;
@@ -747,7 +786,7 @@ button,.btn {
 	}
 	&_img {
 		display: block;
-		margin-bottom: 5px;
+		margin-bottom: 11px;
 		img {
 			display: block;
 		}
@@ -784,7 +823,7 @@ button,.btn {
 .medic {
 	position: relative;
 	display: inline-block;
-	margin-bottom: 13px;
+	margin-bottom: 14px;
 }
 
 .news_medic h1 a {
@@ -797,14 +836,21 @@ button,.btn {
 .medic_img {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 7px;
+	margin-right: 9px;
 	float: left;
 	margin-top: -1px;
+	width: 120px;
+	img,a {
+		display: block;
+		width: 100%;
+	}
 }
 
 .medic_wr {
+	overflow: hidden;
 	.medic_title {
 		margin-bottom: 5px;
+		margin-top: 5px;
 		h2 a {
 			font-size: 17px;
 			color: #005e9f;
@@ -821,12 +867,12 @@ button,.btn {
 	.medic_data {
 		font-size: 10px;
 		color: #999999;
-		margin-bottom: 3px;
+		margin-bottom: 1px;
 		margin-top: -4px;
 	}
 	p {
 		font-size:13px;
-		line-height: 13px;
+		line-height: 14px;
 	}
 }
 
@@ -895,6 +941,7 @@ button,.btn {
 
 .add_story {
 	text-align: center;
+	margin-top: 8px;
 	a {
 		display:inline-block;
 		background: image-url('add-icon.png') no-repeat;
@@ -915,8 +962,9 @@ button,.btn {
 -----------------------------------------------------------------------------*/
 .left-sidebar {
 	float: left;
-	width: 240px;
+	width: 24%;
 	@extend %clear_a;
+	margin-right: 1.4%;
 	// position: relative;
 	// margin-left: -100%;
 	h3 {
@@ -979,7 +1027,7 @@ button,.btn {
 .sidebar_rek {
 	display: block;
 	&+* {
-		margin-top: 15px;
+		margin-top: 19px;
 	}
 	img {
 		display: block;
@@ -1207,77 +1255,23 @@ button,.btn {
 	}
 }
 
-.left-col>img {
-    margin-top: 15px;
-}
-
-.pagination ul {
-	padding: 0 20px;
-	float: left;
-	margin-top: 13px;
-	font-size: 12px;
-}
-.pagination {
-	position: relative;
-	float: left;
-	margin-bottom: 11px;
-}
-
-.pagination .left {
-	background: image-url('arrow-left.png') no-repeat;
-	width: 6px;
-	height: 10px;
-	display: block;
-	position: absolute;
-	left: 6px;
-	top: 15px;
-}
-
-.pagination ul li {
-	font-size: 14px;
-	padding: 0 3px;
-	margin: 0 5px;
-	float: left;
-	list-style-type: none;
-}
-
-.pagination .right {
-	background: image-url('arrow-right.png') no-repeat;
-	width: 6px;
-	height: 10px;
-	display: block;
-	position: absolute;
-	right: 0;
-	top: 14px;
-}
-
-.pagination ul li:hover {
-	cursor: pointer;
-	color: #fff;
-	background: #6e4682;
-}
-
-.pagination ul li.active {
-	color: #fff;
-	background: #6e4682;
-}
 
 /* Right Sidebar
 -----------------------------------------------------------------------------*/
 .right-sidebar {
 	float: right;;
-	width: 240px;
+	width: 24%;
 	// margin-left: -240px;
 	position: relative;
 	@extend %clear_a;
+	margin-left: 1.4%;
 	h3 {
 		margin-bottom: 16px;
 	}
 }
 
 .tips {
-	margin-bottom: 13px;
-	padding-bottom: 13px; 
+	margin-bottom: 13px; 
 	.tip {
 		display: table;
 		width: 100%;
@@ -1421,6 +1415,79 @@ button,.btn {
 	}
 }
 
+.meta_tags {
+	margin-bottom: 15px;
+	.meta_tags_search {
+		background-color: #e2e5e7;
+		padding: 19px 36px;
+		margin-bottom: -1px;
+		position: relative;
+		input {
+			background-color: #fcfcfc;
+			border: 2px solid #d5d5d5;
+			height: 28px;
+			padding-right: 20px;
+		}
+		@include placeholder {
+			color: $color_gray;
+			font-size: 10px;
+			font-weight: 400;
+		}
+		&:after {
+			content: '›';
+			position: absolute;
+			right: 42px;
+			top: 25px;
+			font-size: 30px;
+			line-height: 14px;
+			color: $color_gray;
+		}
+	}
+	.meta_tags_wrapp {
+		padding: 12px 12px;
+		line-height: 19px;
+		text-align: justify;
+	}
+	[class*='meta_tags_item'] {
+		color: $color_blue;
+		font-size: 12px;
+		margin-right: 3px;
+		vertical-align: baseline;
+	}
+	.meta_tags_item {
+		&-large {
+			font-size: 14px;
+			margin-right: 8px;
+		}
+		&-large-upper {
+			font-size: 14px;
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+		&-largest {
+			font-size: 18px;
+			margin-right: 1px;
+		}
+		&-upper {
+			font-size: 14px;
+		}
+		&-midle-upper {
+			text-transform: uppercase;
+		}
+		&-small {
+			font-size: 9px;
+		}
+		&-cursive {
+			font-size: 11px;
+			font-style: italic;
+		}
+		&-smaller {
+			font-size: 8px;
+			font-weight: 600;
+		}
+	}
+}
+
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
@@ -1428,10 +1495,11 @@ button,.btn {
 	background-color: #e6e6e6;
 	position: relative;
 	&_content {
-		width: 1000px;
+		max-width: 1400px;
+		min-width: 990px;
 		margin: 0 auto;
+		padding: 18px 5px;
 		@extend %clear_all;
-		padding: 18px 0;
 	}
 	&_left_box {
 		float: left;
@@ -1643,7 +1711,7 @@ margin-top: 10px;
 
 .med_bg_w {
 	background: #f5f2f6;
-	padding: 4px 5px;
+	padding: 15px 15px 13px;
 }
 
 .med_bg_t {

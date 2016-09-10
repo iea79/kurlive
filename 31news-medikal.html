@@ -66,514 +66,639 @@ document.onclick=mclose;
 <div class="wrapper">
 
 	<div class="header">
-		<div class="header_top">
-		
-			<div class="baner">
-				<a href="#" alt="" title=""><img src="images/banner.jpg" alt="" title=""/></a>
-			</div>
-			<div class="vh_reg">
-				<form action="#">
-					<input type="text" id="login" placeholder="логин" name="username">
-					<input type="password"  placeholder="пароль" name="password">
-					<a href="#" class="registration m-dotted" id="#example1" onclick="$('#exampleModal1').arcticmodal()">регистрация</a>
-					<button class="vhod">вход</button>
-				</form>
-			</div>
-		</div>
-		<div class="header_bottom">
+
+		<!-- begin header_left -->
+		<div class="header_left">
+				
+			<a href="#" class="header_left_img"><img src="images/h_top.jpg" alt="" title=""/></a>
+
 			<div class="logo">
 				<a href="#"><img src="images/logo.png" /></a>
 			</div>
-			<div class="head_centr">
-				<div class="serch">
-					<div class="region">
-						<a href="#">Регион</a>: <span>Москва</span>
-					</div>
-					<div class="search-unit">
-						<div class="search_p"><a href="#">расширенный поиск</a></div>
-						<input type="text" class="in_search">
-						<div class="btn_serch"><button>поиск</button></div>
-					</div>
-				</div>
-				<div class="menu">
-					<ul class="sddm">
-					    <li>
-					    	<a href="#" >Главная</a>
-					    </li>
-					    <li>
-					    	<a href="#">Мнения</a>
-					    </li>
-					    <li>
-					    	<a href="#" class="active">Новости</a>
-					    </li>
-					    <li>
-					    	<a href="#">Болезни</a>
-					    </li>
-					    <li>
-					    	<a href="#">Клиники</a>
-					    </li>
-					    <li>
-					    	<a href="#">Врачи</a>
-					    </li>
-					    <li>
-					    	<a href="#" onmouseover="mopen('m1')" onmouseout="mclosetime()">Еще</a>
-					    	<ul id="m1" class="sddm_drop" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
-					    		<li><a href="#">Истории выздоровлений</a></li>
-					    		<li><a href="#">Советы здоровым</a></li>
-					    		<li><a href="#">Форум</a></li>
-					    		<li><a href="#">Объявления</a></li>
-					    	</ul>
-					    </li>
-					</ul>
-				</div>
+
+			<!-- begin navbar header_nav -->
+			<ul class="navbar header_nav">
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Новости</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Медучреждения</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link active">Врачи</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Заболевания</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Диагностика</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Анализы</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Стоматология</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Травматология</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Аптеки</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Фитнес</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Массаж</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Косметология</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">SPA</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Скидки и Акции</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Психологи</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Здоровое питание</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Вывод из запоев</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Психосоматика</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Отзывы</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Нетрадиционная медицина</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Меню</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Пример меню</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Пример названия</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#" class="navbar__link">Меню пример</a>
+				</li>
+			</ul>
+			<!-- end navbar header_nav -->
+
+		</div>
+
+		<!-- begin header_right -->
+		<div class="header_right">
+			<div class="serch_box">
+				<input type="text" placeholder="поиск"><button class="btn_serch"></button>
 			</div>
-			<div class="banner2">
-				<a href="#"><img src="images/banner2.jpg"/></a>
+			<div class="autorization_link">
+				<a href="#">регистрация</a>
+				<a href="#">вход</a>
+			</div>
+			<div class="header_right_rek">
+				<a href="#"><img src="images/h_right2.jpg"/></a>
 			</div>
 		</div>
-	</div><!-- .header-->
+		<!-- end header_right -->
+
+	</div>
+	<!-- end header -->
 		
 	<div class="middle">
 
-		<div class="container">
-			<div class="content">
-				<div class="main_content">
+		<div class="right-sidebar">
+
+			<a class="sidebar_rek" href="#"><img src="images/r_sbar.jpg" /></a>
+			
+			<div class="meta_tags">
 				
-					<ul class="menu_medic">
-						<li class="active"><a href="#">новости медицины</a></li>
-						<li><a href="#">новости клиник</a></li>
-					</ul>
-					<div style="clear:both"></div>
+				<div class="meta_tags_search">
+					<input type="text" placeholder="Поиск по тэгам" />
+				</div>
 
-					<h1>Новости медицины</h1>
+				<div class="meta_tags_wrapp shadow_boxes">
+					<a href="#" class=" meta_tags_item-large">Здоровье</a>
+					<a href="#" class=" meta_tags_item-largest">КУРОРТ</a>
+					<a href="#" class="">медицина</a>
+					<a href="#" class=" meta_tags_item-upper">косметология</a>
+					<a href="#" class="">как сохранить здоровье</a>
+					<a href="#" class=" meta_tags_item-midle-upper">СТОМАТОЛОГИЯ</a>
+					<a href="#" class=" meta_tags_item-midle-upper">красота</a>
+					<a href="#" class="">психиатр</a>
+					<a href="#" class=" meta_tags_item-small">Стимулование</a>
+					<a href="#" class=" meta_tags_item-midle-upper">коммьюнити</a>
+					<a href="#" class="">ассортимент</a>
+					<a href="#" class=" meta_tags_item-cursive">переворачивает</a>
+					<a href="#" class=" meta_tags_item-midle-upper">из ряда вон</a>
+					<a href="#" class=" meta_tags_item-smaller">выхода нет</a>
+					<a href="#" class=" meta_tags_item-upper">ВЫХОД ЕСТЬ</a>
+					<a href="#" class=" meta_tags_item-upper">выставочный стенд</a>
+					<a href="#" class="">ассортимент</a>
+					<a href="#" class=" meta_tags_item-small">больница</a>
+					<a href="#" class=" meta_tags_item-large">Здоровье</a>
+					<a href="#" class=" meta_tags_item-largest">КУРОРТ</a>
+					<a href="#" class="">медицина</a>
+					<a href="#" class=" meta_tags_item-upper">косметология</a>
+					<a href="#" class="">как сохранить здоровье</a>
+					<a href="#" class=" meta_tags_item-midle-upper">СТОМАТОЛОГИЯ</a>
+					<a href="#" class=" meta_tags_item-midle-upper">красота</a>
+					<a href="#" class="">психиатр</a>
+					<a href="#" class=" meta_tags_item-small">Стимулование</a>
+					<a href="#" class=" meta_tags_item-midle-upper">коммьюнити</a>
+					<a href="#" class="">ассортимент</a>
+					<a href="#" class=" meta_tags_item-cursive">переворачивает</a>
+					<a href="#" class=" meta_tags_item-midle-upper">из ряда вон</a>
+					<a href="#" class=" meta_tags_item-smaller">выхода нет</a>
+					<a href="#" class=" meta_tags_item-upper">ВЫХОД ЕСТЬ</a>
+					<a href="#" class=" meta_tags_item-upper">выставочный стенд</a>
+					<a href="#" class="">ассортимент</a>
+					<a href="#" class=" meta_tags_item-small">больница</a>
+					<a href="#" class=" meta_tags_item-large">Здоровье</a>
+					<a href="#" class=" meta_tags_item-largest">КУРОРТ</a>
+					<a href="#" class="">медицина</a>
+					<a href="#" class=" meta_tags_item-upper">косметология</a>
+					<a href="#" class="">как сохранить здоровье</a>
+					<a href="#" class=" meta_tags_item-midle-upper">СТОМАТОЛОГИЯ</a>
+					<a href="#" class=" meta_tags_item-midle-upper">красота</a>
+					<a href="#" class="">психиатр</a>
+					<a href="#" class=" meta_tags_item-small">Стимулование</a>
+					<a href="#" class=" meta_tags_item-midle-upper">коммьюнити</a>
+					<a href="#" class="">ассортимент</a>
+					<a href="#" class=" meta_tags_item-cursive">переворачивает</a>
+					<a href="#" class=" meta_tags_item-midle-upper">из ряда вон</a>
+					<a href="#" class=" meta_tags_item-smaller">выхода нет</a>
+					<a href="#" class=" meta_tags_item-upper">ВЫХОД ЕСТЬ</a>
+					<a href="#" class=" meta_tags_item-upper">выставочный стенд</a>
+					<a href="#" class="">ассортимент</a>
+					<a href="#" class=" meta_tags_item-small">больница</a>
+					<a href="#" class=" meta_tags_item-large">Здоровье</a>
+					<a href="#" class=" meta_tags_item-largest">КУРОРТ</a>
+					<a href="#" class="">медицина</a>
+					<a href="#" class=" meta_tags_item-upper">косметология</a>
+					<a href="#" class="">как сохранить здоровье</a>
+					<a href="#" class=" meta_tags_item-midle-upper">СТОМАТОЛОГИЯ</a>
+					<a href="#" class=" meta_tags_item-midle-upper">красота</a>
+					<a href="#" class="">психиатр</a>
+					<a href="#" class=" meta_tags_item-small">Стимулование</a>
+					<a href="#" class=" meta_tags_item-midle-upper">коммьюнити</a>
+					<a href="#" class="">ассортимент</a>
+					<a href="#" class=" meta_tags_item-cursive">переворачивает</a>
+					<a href="#" class=" meta_tags_item-midle-upper">из ряда вон</a>
+					<a href="#" class=" meta_tags_item-smaller">выхода нет</a>
+					<a href="#" class=" meta_tags_item-upper">ВЫХОД ЕСТЬ</a>
+					<a href="#" class=" meta_tags_item-upper">выставочный стенд</a>
+					<a href="#" class="">ассортимент</a>
+					<a href="#" class=" meta_tags_item-small">больница</a>
+					<a href="#" class=" meta_tags_item-large">Здоровье</a>
+					<a href="#" class=" meta_tags_item-largest">КУРОРТ</a>
+					<a href="#" class="">медицина</a>
+					<a href="#" class=" meta_tags_item-upper">косметология</a>
+					<a href="#" class="">как сохранить здоровье</a>
+					<a href="#" class=" meta_tags_item-midle-upper">СТОМАТОЛОГИЯ</a>
+					<a href="#" class=" meta_tags_item-midle-upper">красота</a>
+					<a href="#" class="">психиатр</a>
+					<a href="#" class=" meta_tags_item-small">Стимулование</a>
+					<a href="#" class=" meta_tags_item-midle-upper">коммьюнити</a>
+					<a href="#" class="">ассортимент</a>
+					<a href="#" class=" meta_tags_item-cursive">переворачивает</a>
+					<a href="#" class=" meta_tags_item-midle-upper">из ряда вон</a>
+					<a href="#" class=" meta_tags_item-smaller">выхода нет</a>
+					<a href="#" class=" meta_tags_item-upper">ВЫХОД ЕСТЬ</a>
+					<a href="#" class=" meta_tags_item-upper">выставочный стенд</a>
+					<a href="#" class="">ассортимент</a>
+					<a href="#" class=" meta_tags_item-small">больница</a>
+				</div>
 
-					<div class="medic med_bg_w">
-						<div class="medic_img">
-							<a href="#"><img src="images/view-pic.png" alt="" /></a>
-						</div>
-						<div class="medic_wr">
-							<div class="medic_title">
-								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
-							</div>
-							<div class="medic_data">
-								08 октября 2013, 09:31
-							</div>
-							<p>
-								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
-							</p>
-						</div>
-					</div>
-					<div class="medic med_bg_w">
-						<div class="medic_img">
-							<a href="#"><img src="images/view-pic.png" alt="" /></a>
-						</div>
-						<div class="medic_wr">
-							<div class="medic_title">
-								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
-							</div>
-							<div class="medic_data">
-								08 октября 2013, 09:31
-							</div>
-							<p>
-								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
-							</p>
-						</div>
-					</div>
-					<div class="medic med_bg_w">
-						<div class="medic_img">
-							<a href="#"><img src="images/view-pic.png" alt="" /></a>
-						</div>
-						<div class="medic_wr">
-							<div class="medic_title">
-								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
-							</div>
-							<div class="medic_data">
-								08 октября 2013, 09:31
-							</div>
-							<p>
-								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
-							</p>
-						</div>
-					</div>
-					<div class="medic med_bg_w">
-						<div class="medic_img">
-							<a href="#"><img src="images/view-pic.png" alt="" /></a>
-						</div>
-						<div class="medic_wr">
-							<div class="medic_title">
-								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
-							</div>
-							<div class="medic_data">
-								08 октября 2013, 09:31
-							</div>
-							<p>
-								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
-							</p>
-						</div>
-					</div>
-					<div class="medic med_bg_w">
-						<div class="medic_img">
-							<a href="#"><img src="images/view-pic.png" alt="" /></a>
-						</div>
-						<div class="medic_wr">
-							<div class="medic_title">
-								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
-							</div>
-							<div class="medic_data">
-								08 октября 2013, 09:31
-							</div>
-							<p>
-								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
-							</p>
-						</div>
-					</div>
+			</div>
+			
+			<div class="shadow_boxes">
+
+                <div class="shadow_boxes_title">Опрос <a href="#" class="title_link">все опросы</a></div>
+
+            	<div class="survey">
+            		
+                    <h6>Как часто вы показываетесь терапевту?</h6>
+                    <form action="#">
+                    	<input type="radio" name="q" id="q1">	                    
+                    	<label>каждую неделю</label>
+                    	<br>	                    
+                    	<input type="radio" name="q" id="q2">	                    
+                    	<label>1 раз в месяц</label>
+                    	<br>	                    
+                    	<input type="radio" name="q" id="q3">	                    
+                    	<label>раз в год</label>
+                    	<br>	                    
+                    	<a href="#">голосовать</a>
+                    	<a href="">результаты</a>
+                    </form>   
+
+            	</div>
+
+            </div>
+			
+			<div class="shadow_boxes">
 				
+				<div class="sidebar_soc">
+					<div class="sidebar_soc_toggle">
+						<a href="#"><img src="images/vk.png" alt="" /></a>
+						<a href="#"><img src="images/twitter.png" alt="" /></a>
+						<a href="#"><img src="images/facebook.png" alt="" /></a>
+						<a href="#"><img src="images/odn.png" alt="" /></a>
+					</div>
+
+					<div class="sidebar_soc_vidget"><img src="images/fb.png" /></div>
+				</div>
 				
-					<div class="n_klinik">
-						<div class="klinick_l kl_w">
-							<div class="img_klinick">
-								<a href="#"><img src="images/news-big-pic.png"/></a>
-							</div>
-							<div class="klinik_link">
-								<a href="#"> Ученые выяснили, как сделть  послушным</a>
-							</div>
-							<p>Ученые...</p>
-						
-						</div>
-						<div class="klinick_r kl_r">
-							<div class="img_klinick">
-								<a href="#"><img src="images/news-big-pic.png"/></a>
-							</div>
-							<div class="klinik_link">
-								<a href="#"> Ученые выяснили, как сделть  послушным</a>
-							</div>
-							<p>Ученые из Швейцарии выяснили, сделать человека послушным. Исследователи из университета...</p>
-						
-						</div>
-					</div>
+			</div>
 
+		</div><!-- .right-sidebar -->
 
-					<div class="medic med_bg_w">
-						<div class="medic_img">
-							<a href="#"><img src="images/view-pic.png" alt="" /></a>
-						</div>
-						<div class="medic_wr">
-							<div class="medic_title">
-								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
-							</div>
-							<div class="medic_data">
-								08 октября 2013, 09:31
-							</div>
-							<p>
-								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
-							</p>
-						</div>
-					</div>
-					<div class="medic med_bg_w">
-						<div class="medic_img">
-							<a href="#"><img src="images/view-pic.png" alt="" /></a>
-						</div>
-						<div class="medic_wr">
-							<div class="medic_title">
-								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
-							</div>
-							<div class="medic_data">
-								08 октября 2013, 09:31
-							</div>
-							<p>
-								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
-							</p>
-						</div>
-					</div>
-					<div class="medic med_bg_w">
-						<div class="medic_img">
-							<a href="#"><img src="images/view-pic.png" alt="" /></a>
-						</div>
-						<div class="medic_wr">
-							<div class="medic_title">
-								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
-							</div>
-							<div class="medic_data">
-								08 октября 2013, 09:31
-							</div>
-							<p>
-								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
-							</p>
-						</div>
-					</div>
+		<div class="left-sidebar">
 
-					<div class="more">
-						<button>еще</button>
+			<!-- begin viewpoint -->
+			<div class="shadow_boxes">
+
+				<div class="shadow_boxes_title">Мнения <a href="#" class="title_link">все мнения</a></div>
+			
+				<div class="viewpoint">
+				
+					<div class="viewpoint_item">
+						<div class="viewpoint_img">
+							<img src="images/mnen.jpg" alt=""/>
+						</div>
+						<div class="viewpoint_name">Ивановков-Султанов Иван:</div>
+						<a href="#" class="viewpoint_link">Предсознательное, на первый взгляд, неустойчиво осознаёт архетип, как и предсказывает теория о бесполезном представляет собой знании.</a>
 					</div>
 					
-					<div class="add_story">
+					<div class="viewpoint_item">
+						<div class="viewpoint_img">
+							<img src="images/mnen.jpg" alt=""/>
+						</div>
+						<div class="viewpoint_name">Ивановков-Султанов Иван:</div>
+						<a href="#" class="viewpoint_link">Предсознательное, на первый взгляд, неустойчиво осознаёт архетип, как и предсказывает теория о бесполезном представляет собой знании.</a>
+					</div>
+					
+				</div>
+				
+			</div>
+			<!-- end viewpoint -->
+
+			<div class="shadow_boxes">
+				
+				<div class="shadow_boxes_title shadow_boxes_title-warning">Black List  <a href="#" class="title_link">весь лист</a></div>
+
+				<ol class="num_list">
+					<li>
+						<a href="#" class="num_list_title"><span>Аптека «Интерфарма» в Дагомысе</span></a>
+						<span class="num_list_text">По данным Роспотребнадзора, здесь неправильно хранят лекарства</span>
+					</li>
+					<li>
+						<a href="#" class="num_list_title"><span>Магазин «Дары Мира» на Летней в Сочи</span></a>
+						<span class="num_list_text">По решению суда, магазин оштрафован на 300 тыс руб</span>
+					</li>
+					<li>
+						<a href="#" class="num_list_title"><span>Адлерское Кафе «Сим-Сим»</span></a>
+						<span class="num_list_text">Факт отравления посетителей этого кафе зафиксировали надзорные органы</span>
+					</li>
+					<li>
+						<a href="#" class="num_list_title"><span>Кафе «Бабаева» на Приморском пляже</span></a>
+						<span class="num_list_text">СанЭпиднадзор вынес третье предупреждение владельцу кафе</span>
+					</li>
+				</ol>
+
+			</div>
+
+			<a href="#" class="sidebar_rek"><img class="ban" src="images/l_side.jpg" alt=""></a>
+
+			<!-- begin finde_recept -->
+			<div class="finde_recept">
+				<form action="#">
+
+					<legend class="finde_recept_legend">Проверь свой рецепт <br />Введи название болезни</legend>
+
+					<input type="text" />
+
+					<button class="btn">получить</button>
+					
+				</form>
+			</div>
+			<!-- end finde_recept -->
+
+			<!-- begin people_recepts -->
+			<div class="shadow_boxes">
+
+				<div class="shadow_boxes_title">Народные рецепты </div>
+
+				<ul class="people_recepts">
+				
+					<li class="people_recepts_item">
+						<div class="people_recepts_name">астма</div>
+						<a href="#" class="people_recepts_link">Какие налоги надо уменьшить немедленно</a>
+						<span class="people_recepts_notiff">5</span>
+					</li>
+					<li class="people_recepts_item">
+						<div class="people_recepts_name">астма</div>
+						<a href="#" class="people_recepts_link">Какие налоги надо уменьшить немедленно</a>
+						<span class="people_recepts_notiff">5</span>
+					</li>
+					<li class="people_recepts_item">
+						<div class="people_recepts_name">астма</div>
+						<a href="#" class="people_recepts_link">Какие налоги надо уменьшить немедленно</a>
+						<span class="people_recepts_notiff">5</span>
+					</li>
+					
+				</ul>
+			</div>
+			<!-- end people_recepts -->
+			
+		</div><!-- .left-sidebar -->
+
+		<div class="container">
+			<div class="content">
+				<div class="shadow_boxes">
+					
+					<div class="shadow_boxes_title">Новости</div>
+
+					<div class="medic med_bg_w">
+						<div class="medic_img">
+							<a href="#"><img src="images/view-pic.png" alt="" /></a>
+						</div>
+						<div class="medic_wr">
+							<div class="medic_title">
+								<h2><a href="#">Ученые выяснили, как сделать человека мгновенно очень послушным и навсегда</a></h2>
+							</div>
+							<div class="medic_data">
+								08 октября 2013, 09:31
+							</div>
+							<p>
+								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
+							</p>
+						</div>
+					</div>
+					<div class="medic med_bg_w">
+						<div class="medic_img">
+							<a href="#"><img src="images/view-pic.png" alt="" /></a>
+						</div>
+						<div class="medic_wr">
+							<div class="medic_title">
+								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
+							</div>
+							<div class="medic_data">
+								08 октября 2013, 09:31
+							</div>
+							<p>
+								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
+							</p>
+						</div>
+					</div>
+					<div class="medic med_bg_w">
+						<div class="medic_img">
+							<a href="#"><img src="images/view-pic.png" alt="" /></a>
+						</div>
+						<div class="medic_wr">
+							<div class="medic_title">
+								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
+							</div>
+							<div class="medic_data">
+								08 октября 2013, 09:31
+							</div>
+							<p>
+								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
+							</p>
+						</div>
+					</div>
+					<div class="medic med_bg_w">
+						<div class="medic_img">
+							<a href="#"><img src="images/view-pic.png" alt="" /></a>
+						</div>
+						<div class="medic_wr">
+							<div class="medic_title">
+								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
+							</div>
+							<div class="medic_data">
+								08 октября 2013, 09:31
+							</div>
+							<p>
+								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
+							</p>
+						</div>
+					</div>
+					<div class="medic med_bg_w">
+						<div class="medic_img">
+							<a href="#"><img src="images/view-pic.png" alt="" /></a>
+						</div>
+						<div class="medic_wr">
+							<div class="medic_title">
+								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
+							</div>
+							<div class="medic_data">
+								08 октября 2013, 09:31
+							</div>
+							<p>
+								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
+							</p>
+						</div>
+					</div>
+					<div class="medic med_bg_w">
+						<div class="medic_img">
+							<a href="#"><img src="images/view-pic.png" alt="" /></a>
+						</div>
+						<div class="medic_wr">
+							<div class="medic_title">
+								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
+							</div>
+							<div class="medic_data">
+								08 октября 2013, 09:31
+							</div>
+							<p>
+								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
+							</p>
+						</div>
+					</div>
+					<div class="medic med_bg_w">
+						<div class="medic_img">
+							<a href="#"><img src="images/view-pic.png" alt="" /></a>
+						</div>
+						<div class="medic_wr">
+							<div class="medic_title">
+								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
+							</div>
+							<div class="medic_data">
+								08 октября 2013, 09:31
+							</div>
+							<p>
+								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
+							</p>
+						</div>
+					</div>
+					<div class="medic med_bg_w">
+						<div class="medic_img">
+							<a href="#"><img src="images/view-pic.png" alt="" /></a>
+						</div>
+						<div class="medic_wr">
+							<div class="medic_title">
+								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
+							</div>
+							<div class="medic_data">
+								08 октября 2013, 09:31
+							</div>
+							<p>
+								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
+							</p>
+						</div>
+					</div>
+					<div class="medic med_bg_w">
+						<div class="medic_img">
+							<a href="#"><img src="images/view-pic.png" alt="" /></a>
+						</div>
+						<div class="medic_wr">
+							<div class="medic_title">
+								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
+							</div>
+							<div class="medic_data">
+								08 октября 2013, 09:31
+							</div>
+							<p>
+								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
+							</p>
+						</div>
+					</div>
+					<div class="medic med_bg_w">
+						<div class="medic_img">
+							<a href="#"><img src="images/view-pic.png" alt="" /></a>
+						</div>
+						<div class="medic_wr">
+							<div class="medic_title">
+								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
+							</div>
+							<div class="medic_data">
+								08 октября 2013, 09:31
+							</div>
+							<p>
+								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
+							</p>
+						</div>
+					</div>
+					<div class="medic med_bg_w">
+						<div class="medic_img">
+							<a href="#"><img src="images/view-pic.png" alt="" /></a>
+						</div>
+						<div class="medic_wr">
+							<div class="medic_title">
+								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
+							</div>
+							<div class="medic_data">
+								08 октября 2013, 09:31
+							</div>
+							<p>
+								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
+							</p>
+						</div>
+					</div>
+					<div class="medic med_bg_w">
+						<div class="medic_img">
+							<a href="#"><img src="images/view-pic.png" alt="" /></a>
+						</div>
+						<div class="medic_wr">
+							<div class="medic_title">
+								<h2><a href="#">Ученые выяснили, как сделать человека послушным</a></h2>
+							</div>
+							<div class="medic_data">
+								08 октября 2013, 09:31
+							</div>
+							<p>
+								Ученые из Швейцарии выяснили, как сделать человека послушным. Исследователи Цюрихского университета, полагают, что новый метод можно использовать для...
+							</p>
+						</div>
+					</div>
+					
+					<!-- begin pagination -->
+					<ul class="pagination fl__left">
+					
+						<li>
+							<a class="active" href="#">1</a>
+						</li>
+						<li>
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a href="#">3</a>
+						</li>
+						<li>
+							<a href="#">4</a>
+						</li>
+						<li>
+							<a href="#">5</a>
+						</li>
+						
+					</ul>
+					<!-- end pagination -->
+					
+					
+					
+					<div class="add_story fl__right">
 						<a href="#" class ="m-dotted" id="#example2" onclick="$('#exampleModal2').arcticmodal()">Добавить свою</a>
 					</div>
 				</div>
 			</div><!-- .content-->
 		</div><!-- .container-->
 
-		<div class="left-sidebar">
-			<div class="sentiments">
-				<h3>Мнения</h3>
-				<div class="sentiment">
-					<div class="sen_img">
-						<a href="#"><img src="images/view-pic.png" alt="" /></a>
-					</div>
-					<div class="sen_data">
-						08 октября 2013
-					</div>
-					<div class="sen_author">
-						Иванов Иван:
-					</div>
-					<div class="sen_link">
-						<a href="#">Какие налоги надо уменьшить</a>
-					</div>
-					<p class="sen_text">
-						Ученые выяснили, как сделать человекапослушным. Исследователи полагают, что...
-					</p>
-				</div>
-				<div class="sentiment">
-					<div class="sen_img">
-						<a href="#"><img src="images/view-pic.png" alt="" /></a>
-					</div>
-					<div class="sen_data">
-						08 октября 2013
-					</div>
-					<div class="sen_author">
-						Иванов Иван:
-					</div>
-					<div class="sen_link">
-						<a href="#">Какие налоги надо уменьшить</a>
-					</div>
-					<p class="sen_text">
-						Ученые выяснили, как сделать человекапослушным. Исследователи полагают, что...
-					</p>
-				</div>
-				<div class="sentiment">
-					<div class="sen_img">
-						<a href="#"><img src="images/view-pic.png" alt="" /></a>
-					</div>
-					<div class="sen_data">
-						08 октября 2013
-					</div>
-					<div class="sen_author">
-						Иванов Иван:
-					</div>
-					<div class="sen_link">
-						<a href="#">Какие налоги надо уменьшить</a>
-					</div>
-					<p class="sen_text">
-						Ученые выяснили, как сделать человекапослушным. Исследователи полагают, что...
-					</p>
-				</div>
-			</div>
-			
-			 <div class="calendar">
-                        <h3>События</h3>
-                        <div class="months">
-                         <a href="#" class="left"></a>
-                        <div>Октябрь 2014</div>
-                        <a href="#" class="right"></a>
-                        </div>
-                        <div class="days">
-                            <span>Пт</span>
-                            <span>Вт</span>
-                            <span>Ср</span>
-                            <span>Чт</span>
-                            <span>Пт</span>
-                            <span>Сб</span>
-                            <span>Вс</span>
-                        </div>
-                        <div class="pagination">
-                            <a href="#" class="left"></a>
-                            <ul class="clearfix">
-                                <li>2</li>
-                                <li class="active">3</li>
-                                <li>4</li>
-                                <li>5</li>
-                                <li>6</li>
-                                <li>7</li>
-                                <li>8</li>
-                            </ul>
-                            <a href="#" class="right"></a>
-                        </div>
-                        <div class="dev-unit">
-                            <a href="#">
-                                <span class="date">13.04</span>
-                                <span class="p">Лекция Титова. Как не умереть при родах</span>
-                            </a>
-                            <a href="#">
-                                <span class="date">13.04</span>
-                                <span class="p">Лекция Титова. Как не умереть при родах</span>
-                            </a>
-                        </div>
-                    </div>
-					
-					
-				<img class="ban" src="images/240x200.png" alt="">
-				<img class="ban" src="images/240x200.png" alt="">
-				
-				<div class="survey">
-                    <h3>Опрос <a href="#">все опросы</a></h3>
-    
-                        <h6>Как часто вы показываетесь терапевту?</h6>
-                        <form action="#">
-                                <input type="radio" name="q" id="q1"><label>каждую неделю</label><br>
-                            <input type="radio" name="q" id="q2"><label>1 раз в месяц</label><br>
-                            <input type="radio" name="q" id="q3"><label>раз в год</label><br>
-                        <a href="#">голосовать</a>
-						<a href="">результаты</a>
-                    </form>
-                </div>
-		</div><!-- .left-sidebar -->
-
-		<div class="right-sidebar">
-			<div class="banner3">
-				<a href="#"><img src="images/banner3.jpg" /></a>
-			</div>
-			
-			<div class="tips">
-				<h3>Советы здоровым</h3>
-				<div class="tip">
-					<div class="tip_img">
-						<a href=""><img src="images/tips-pic.png"/></a>
-					</div>
-					<div class="tip_link">
-						<a href="">Где лечат врачи болезнь</a>
-					</div>
-				</div>
-				<div class="tip">
-					<div class="tip_img">
-						<a href=""><img src="images/tips-pic.png"/></a>
-					</div>
-					<div class="tip_link">
-						<a href="">Как победить недуг травами</a>
-					</div>
-				</div>
-			</div>
-			
-			<div class="stories">
-				<h3>Истории выздоровлений</h3>
-				<div class="history">
-					<div class="his_title">
-						<h6>Заглавие</h6>
-					</div>
-					<div class="his_img">
-						<a href="#"><img src="images/stories-pic.png" />
-							<div class="his_link">
-								астма
-							</div>
-						</a>
-						
-					</div>
-					
-				</div>
-				<div class="history">
-					<div class="his_title">
-						<h6>Заглавие</h6>
-					</div>
-					<div class="his_img">
-						<a href="#"><img src="images/stories-pic.png" />
-							<div class="his_link">
-								астма
-							</div>
-						</a>
-						
-					</div>
-					
-				</div>
-				<div class="history">
-					<div class="his_title">
-						<h6>Заглавие</h6>
-					</div>
-					<div class="his_img">
-						<a href="#"><img src="images/stories-pic.png" />
-							<div class="his_link">
-								астма
-							</div>
-						</a>
-						
-					</div>
-					
-				</div>
-				<div class="history">
-					<div class="his_title">
-						<h6>Заглавие</h6>
-					</div>
-					<div class="his_img">
-						<a href="#"><img src="images/stories-pic.png" />
-							<div class="his_link">
-								астма
-							</div>
-						</a>
-						
-					</div>
-					
-				</div>
-				
-				<div class="add_story">
-					<a href="#" class ="m-dotted" id="#example2" onclick="$('#exampleModal2').arcticmodal()">Добавить свою</a>
-				</div>
-			</div>
-			<div class="fc">
-				<img src="images/fb.png" />
-			</div>
-		</div>
-	</div><!-- .right-sidebar -->
-<div class="footer">
-		<div class="foot_top">
-			<div class="foot-nav">
-				<h4>Объявления</h4>
-				<ul>
-					<li><a href="#">Продам</a></li>
-					<li class="separator"></li>
-					<li><a href="#">Куплю</a></li>
-					<li class="separator"></li>
-					<li><a href="#">Приму в дар</a></li>
-					<li class="separator"></li>
-					<li><a href="#">Отдам даром</a></li>
-					<li class="separator"></li>
-					<li><a href="#">Окажу услугу</a></li>
-				</ul>
-			</div>
-			<div style="clear:both"></div>
-			<div class="categories">
-				<ul>
-					<li><a href="#">Бады и лекарства</a> <div class="separ"></div> 7</li>
-					<li><a href="#">Бады и лекарства</a> <span class="separ"></span> 7</li>
-					<li><a href="#">Бады и лекарства</a> <span class="separ"></span> 7</li>
-					<li><a href="#">Курортно-санаторное лечение</a> <span class="separ"></span> 3</li>
-					<li><a href="#">Курортно-санаторное лечение</a> <span class="separ"></span> 3</li>
-					<li><a href="#">Курортно-санаторное лечение</a> <span class="separ"></span> 3</li>
-					<li><a href="#">Мебель и оборудование</a><span class="separ"></span> 12</li>
-					<li><a href="#">Мебель и оборудование</a><span class="separ"></span> 12</li>
-					<li><a href="#">Мебель и оборудование</a><span class="separ"></span> 12</li>
-				</ul>                            
-			</div>
-		</div>
-		<div class="foot_bottom">
-                    <div class="metrika">
-                        <img src="images/metrika.png" alt="">
-                    </div>
-                    <ul>
-                        <li><a href="#">о портале</a></li>
-                        <li><a href="#">реклама</a></li>
-                        <li><a href="#">правила</a></li>
-                        <li><a href="#">контакты</a></li>
-                    </ul>
-                    <div class="copy">
-                        <span>Пациент прав</span>
-                        <span>2012-2013</span>
-                    </div>
-                    <div class="map">
-                        <a href="#">карта сайта</a>
-                    </div>
-                </div>
-	</div><!-- .footer -->
 	</div><!-- .middle-->
-
 	
+</div>
+
+<div class="footer">
+	<div class="footer_content">
+		
+		<div class="footer_left_box">
+			<p>Редакция</p>
+			<p><a href="mailto: info@rugrad.eu">info@rugrad.eu</a></p>
+			<p>8 (4012) 309-422</p>
+			<p>О портале</p>
+		</div>
+
+		<div class="footer_left_box">
+			<p>Рекламная служба</p>
+			<p><a href="mailto: info@rugrad.eu">info@rugrad.eu</a></p>
+			<p>8 (4012) 309-422</p>
+			<p>О портале</p>
+		</div>
+
+		<div class="footer_right_box">
+	        <div class="metrika">
+	            <img src="images/metrika.png" alt="">
+	        </div>
+	        <div class="map">
+	            <a href="#">карта сайта</a>
+	        </div>
+	        <div class="copy">© 2012-2016. Курорт Live.</div>
+		</div>
+
+		<div class="footer_center_box">
+
+			<div class="footer_center_message">Все права защищены. Любое использование материалов допускается только с письменного согласия.</div>
+
+			<div class="foot_bottom">
+		        <ul>
+		            <li><a href="#">о портале</a></li>
+		            <li><a href="#">реклама</a></li>
+		            <li><a href="#">правила</a></li>
+		            <li><a href="#">контакты</a></li>
+		        </ul>
+		    </div>
+		</div>
+
+	</div>
+</div><!-- .footer -->
 
 
 
@@ -654,7 +779,6 @@ document.onclick=mclose;
                 </div>
                 <button>отправить</button>
          </form>
-</div>
 </div>
 
 
