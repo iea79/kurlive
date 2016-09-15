@@ -1661,37 +1661,74 @@ button:hover, .btn:hover {
   height: 232px;
 }
 
+.sticky_box {
+  position: static;
+  padding: 0 24px;
+  z-index: 100;
+  top: -48px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.sticky_box.stiky {
+  position: fixed;
+  top: 0;
+  left: 0%;
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  .sticky_box.stiky {
+    min-width: 990px;
+  }
+}
+.sticky_box.stiky .menu_medic {
+  display: block;
+  margin: 0 auto;
+  max-width: 607px;
+}
+@media (max-width: 1400px) {
+  .sticky_box.stiky .menu_medic {
+    width: 45%;
+    min-width: 420px;
+  }
+}
+
+.psevdo_box {
+  height: 96px;
+  display: none;
+}
+
 ul.menu_medic {
-  margin-bottom: 18px;
+  margin-bottom: 48px;
   display: inline-block;
+  background-color: #fff;
+  width: 100%;
 }
 ul.menu_medic li {
-  float: left;
   list-style-type: none;
   border: 1px solid #d8d8d8;
-  padding: 1px 5px 3px;
-  margin-top: 2px;
-  min-width: 115px;
+  min-width: 154px;
   text-align: center;
   position: relative;
-}
-ul.menu_medic li:nth-child(n+2) {
-  margin-left: -1px;
 }
 ul.menu_medic li:hover {
   border: 1px solid #78538b;
 }
 ul.menu_medic li.active {
-  border: 1px solid #78538b;
-  padding: 3px 5px 5px;
-  margin-top: 0px;
-  z-index: 2;
+  background-color: #6e4682;
+  border: 1px solid #6e4682;
+}
+ul.menu_medic li.active a {
+  color: #fff;
 }
 ul.menu_medic li a {
-  font-size: 11px;
+  font-size: 14px;
   color: #1e1d1d;
   text-decoration: none;
   line-height: 14px;
+  display: block;
+  padding: 16px 25px;
 }
 ul.menu_medic li a:hover {
   text-decoration: none;
@@ -1753,7 +1790,7 @@ h3.kom_title {
   border: none;
   font-size: 18px;
   margin: 15px 0px;
-  float: left;
+  overflow: hidden;
 }
 
 .name {
@@ -1769,7 +1806,6 @@ h3.kom_title {
 }
 
 .reply {
-  float: right;
   color: #006699;
   text-decoration: underline;
   font-size: 12px;
@@ -1792,23 +1828,34 @@ h3.kom_title {
   padding: 3px 5px;
   font-size: 13px;
   line-height: 1.1;
-  padding-bottom: 16px;
+  padding-bottom: 25px;
   position: relative;
 }
+.koment_wr .koment_text .koment_text_wrap {
+  position: relative;
+  height: 47px;
+  overflow: hidden;
+  line-height: 1.2;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.koment_wr .koment_text.open .koment_text_wrap {
+  height: auto;
+  padding-bottom: 7px;
+}
 .koment_wr .koment_text a {
-  position: absolute;
-  margin-bottom: -1px;
   display: inline-block;
-  right: 7px;
-  bottom: 3px;
+  margin-right: 7px;
 }
 .koment_wr .koment_text a:hover {
   text-decoration: none;
 }
-.koment_wr .reply {
+.koment_wr .koment_link {
   position: absolute;
-  right: 8px;
-  bottom: -16px;
+  bottom: 5px;
+  left: 6px;
 }
 
 .koments {
@@ -1818,12 +1865,14 @@ h3.kom_title {
   margin-top: 17px;
 }
 .koments a.open, .koments a.close {
-  display: block;
-  float: right;
+  display: inline-block;
   color: #006699;
   text-decoration: underline;
   font-size: 12px;
   cursor: pointer;
+}
+.koments a.close {
+  display: none;
 }
 .koments a.add_koment {
   text-decoration: none;
@@ -1836,9 +1885,13 @@ h3.kom_title {
   margin-top: 17px;
 }
 
-.news_medic h2, .detal_bol h2, .kl_inf h2 {
+.detail_wrapper {
+  overflow: hidden;
+}
+
+.detal_title {
   color: #5a798f;
-  font-size: 18px;
+  font-size: 17px;
   margin: 15px 0px;
 }
 
@@ -1980,21 +2033,18 @@ h3.kom_title {
   text-transform: lowercase;
 }
 
-.clinics, .doctors {
-  background: #fff;
-  border: 1px solid #d8d8d8;
-  padding: 10px;
-  margin-top: 10px;
+.clinics .doctor:not(:last-child), .clinics .clinic:not(:last-child), .doctors .doctor:not(:last-child), .doctors .clinic:not(:last-child) {
   margin-bottom: 10px;
-  -moz-box-shadow: 0 0 5px #d5d5d5;
-  -webkit-box-shadow: 0 0 5px #d5d5d5;
-  box-shadow: 0 0 5px #d5d5d5;
 }
 
 .detal_opisanie {
-  overflow: auto;
-  height: 1000px;
-  width: 445px;
+  padding: 13px 14px;
+}
+.detal_opisanie p {
+  line-height: 1.2;
+}
+.detal_opisanie p + p {
+  margin-top: 15px;
 }
 
 .histori_vizd {

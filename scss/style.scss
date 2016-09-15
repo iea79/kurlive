@@ -1726,35 +1726,69 @@ margin-top: 10px;
 	height: 232px;
 }
 
+.sticky_box {
+	position: static;
+	padding: 0 24px;
+	z-index: 100;
+	top: -48px;
+	@include trs(.3s);
+	&.stiky {
+		position: fixed;
+		top: 0;
+		left: 0%;
+		width: 100%;
+		@media (max-width:1400px) {
+			min-width: 990px;
+		}
+		// width: 656px;
+		// margin-left: -328px;
+		.menu_medic {
+			display: block;
+			margin: 0 auto;
+			max-width: 607px;
+			@media (max-width:1400px) {
+				width: 45%;
+				min-width: 420px;
+			}
+		}
+	}
+}
+
+.psevdo_box {
+	height: 96px;
+	display: none;
+}
+
 ul.menu_medic {
-	margin-bottom: 18px;
+	margin-bottom: 48px;
 	display: inline-block;
+	background-color: #fff;
+	width: 100%;
 	li {
-		float:left;
 		list-style-type:none;
 		border: 1px solid #d8d8d8;
-		padding: 1px 5px 3px;
-		margin-top:2px;
-		min-width:115px;
+		min-width: 154px;
 		text-align:center;
 		position: relative;
 		&:nth-child(n+2) {
-			margin-left: -1px;
 		}
 		&:hover {
 			border: 1px solid #78538b;
 		}
 		&.active {
-			border: 1px solid #78538b;
-			padding: 3px 5px 5px;
-			margin-top: 0px;
-			z-index: 2;
+			background-color: $color_title;
+			border: 1px solid $color_title;
+			a {
+				color: #fff;
+			}
 		}
 		a {
-			font-size:11px;
+			font-size:14px;
 			color:#1e1d1d;
 			text-decoration:none;
 			line-height:14px;
+			display:block;
+			padding: 16px 25px;
 			&:hover{
 				text-decoration:none;
 			}
@@ -1823,7 +1857,7 @@ h3.kom_title {
 	border: none;
 	font-size: 18px;
 	margin: 15px 0px;
-	float:left;
+	overflow: hidden;
 }
 
 .name {
@@ -1840,7 +1874,6 @@ h3.kom_title {
 
 
 .reply {
-	float: right;
 	color: #006699;
 	text-decoration: underline;
 	font-size: 12px;
@@ -1862,23 +1895,35 @@ h3.kom_title {
 		padding: 3px 5px;
 		font-size: 13px;
 		line-height: 1.1;
-		padding-bottom: 16px;
+		padding-bottom: 25px;
 		position: relative;
+		.koment_text_wrap {
+			position: relative;
+			height: 47px;
+			overflow: hidden;
+			line-height: 1.2;		
+			@include trs(.5s);
+		}
+		&.open {
+			.koment_text_wrap {
+				height: auto;
+				padding-bottom: 7px;
+			}
+		}
 		a {
-			position: absolute;
-			margin-bottom: -1px;
 			display: inline-block;
-			right: 7px;
-			bottom: 3px;
+			margin-right: 7px;
 			&:hover {
 				text-decoration: none;
 			}
 		}
 	}
 	.reply {
+	}
+	.koment_link {
 		position: absolute;
-		right: 8px;
-		bottom: -16px;
+		bottom: 5px;
+		left: 6px;
 	}
 }
 
@@ -1888,12 +1933,14 @@ h3.kom_title {
 	padding-bottom: 1px;
 	margin-top: 17px;
 	a.open, a.close{
-		display:block;
-		float:right;
+		display:inline-block;
 		color:#006699;
 		text-decoration:underline;
 		font-size:12px;
 		cursor:pointer;
+	}
+	a.close {
+		display: none;
 	}
 	a.add_koment{
 		text-decoration:none;
@@ -1907,9 +1954,16 @@ h3.kom_title {
 	}
 }
 
-.news_medic h2, .detal_bol h2, .kl_inf h2{
+.news_medic, .detal_bol, .kl_inf {
+}
+
+.detail_wrapper {
+	overflow: hidden;
+}
+
+.detal_title {
 	color: #5a798f;
-	font-size: 18px;
+	font-size: 17px;
 	margin: 15px 0px;
 }
 
@@ -2057,18 +2111,24 @@ h3.kom_title {
 }
 
 .clinics, .doctors {
-	background: #fff;
-	border: 1px solid #d8d8d8;
-	padding:10px;
-	margin-top: 10px;
-    margin-bottom: 10px;
-	@include box-shadow(0 0 5px #d5d5d5);
+    // margin-bottom: 10px;
+    // margin-top: 10px;
+    .doctor,.clinic {
+    	&:not(:last-child) {		
+	    	margin-bottom: 10px;
+    	}
+    }
 }
 
 .detal_opisanie{
-	overflow: auto;
-	height: 1000px;
-	width: 445px;
+	// overflow: auto;
+	padding: 13px 14px;
+	p {
+		line-height: 1.2;
+		&+p {
+			margin-top: 15px;
+		}
+	}
 }
 
 .histori_vizd {

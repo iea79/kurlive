@@ -11,54 +11,6 @@
 	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
 	<link rel="stylesheet" href="js/jquery.arcticmodal-0.3.css">
 	
-<script type="text/javascript">
-<!--
-var timeout        =500;
-var closetimer		= 0;
-var ddmenuitem     =0;
-
-// open hidden layer
-function mopen(id)
-{	
-	// cancel close timer
-	mcancelclosetime();
-
-	// close old layer
-	if(ddmenuitem) ddmenuitem.style.visibility='hidden';
-
-	// get new layer and show it
-	ddmenuitem=document.getElementById(id);
-	ddmenuitem.style.visibility='visible';
-
-}
-// close showed layer
-function mclose()
-{
-	if(ddmenuitem) ddmenuitem.style.visibility='hidden';
-}
-
-// go close timer
-function mclosetime()
-{
-	closetimer=window.setTimeout(mclose, timeout);
-}
-
-// cancel close timer
-function mcancelclosetime()
-{
-	if(closetimer)
-	{
-		window.clearTimeout(closetimer);
-		closetimer=null;
-	}
-}
-
-// close layer when click-out
-document.onclick=mclose; 
-// -->
-</script>
-
-<script>$('#exampleModal').arcticmodal();</script>
 </head>
 
 <body>
@@ -646,62 +598,53 @@ document.onclick=mclose;
 			</div><!-- .content-->
 		</div><!-- .container-->
 
-	</div>
-
-	
-	<div class="footer">
-		<div class="foot_top">
-			<div class="foot-nav">
-				<h4>Объявления</h4>
-				<ul>
-					<li><a href="#">Продам</a></li>
-					<li class="separator"></li>
-					<li><a href="#">Куплю</a></li>
-					<li class="separator"></li>
-					<li><a href="#">Приму в дар</a></li>
-					<li class="separator"></li>
-					<li><a href="#">Отдам даром</a></li>
-					<li class="separator"></li>
-					<li><a href="#">Окажу услугу</a></li>
-				</ul>
-			</div>
-			<div style="clear:both"></div>
-			<div class="categories">
-				<ul>
-					<li><a href="#">Бады и лекарства</a> <div class="separ"></div> 7</li>
-					<li><a href="#">Бады и лекарства</a> <span class="separ"></span> 7</li>
-					<li><a href="#">Бады и лекарства</a> <span class="separ"></span> 7</li>
-					<li><a href="#">Курортно-санаторное лечение</a> <span class="separ"></span> 3</li>
-					<li><a href="#">Курортно-санаторное лечение</a> <span class="separ"></span> 3</li>
-					<li><a href="#">Курортно-санаторное лечение</a> <span class="separ"></span> 3</li>
-					<li><a href="#">Мебель и оборудование</a><span class="separ"></span> 12</li>
-					<li><a href="#">Мебель и оборудование</a><span class="separ"></span> 12</li>
-					<li><a href="#">Мебель и оборудование</a><span class="separ"></span> 12</li>
-				</ul>                            
-			</div>
-		</div>
-		<div class="foot_bottom">
-                    <div class="metrika">
-                        <img src="images/metrika.png" alt="">
-                    </div>
-                    <ul>
-                        <li><a href="#">о портале</a></li>
-                        <li><a href="#">реклама</a></li>
-                        <li><a href="#">правила</a></li>
-                        <li><a href="#">контакты</a></li>
-                    </ul>
-                    <div class="copy">
-                        <span>Пациент прав</span>
-                        <span>2012-2013</span>
-                    </div>
-                    <div class="map">
-                        <a href="#">карта сайта</a>
-                    </div>
-                </div>
-	</div><!-- .footer -->
-	
 	</div><!-- .middle-->
 
+</div>
+	
+<div class="footer">
+	<div class="footer_content">
+		
+		<div class="footer_left_box">
+			<p>Редакция</p>
+			<p><a href="mailto: info@rugrad.eu">info@rugrad.eu</a></p>
+			<p>8 (4012) 309-422</p>
+			<p>О портале</p>
+		</div>
+
+		<div class="footer_left_box">
+			<p>Рекламная служба</p>
+			<p><a href="mailto: info@rugrad.eu">info@rugrad.eu</a></p>
+			<p>8 (4012) 309-422</p>
+			<p>О портале</p>
+		</div>
+
+		<div class="footer_right_box">
+	        <div class="metrika">
+	            <img src="images/metrika.png" alt="">
+	        </div>
+	        <div class="map">
+	            <a href="#">карта сайта</a>
+	        </div>
+	        <div class="copy">© 2012-2016. Курорт Live.</div>
+		</div>
+
+		<div class="footer_center_box">
+
+			<div class="footer_center_message">Все права защищены. Любое использование материалов допускается только с письменного согласия.</div>
+
+			<div class="foot_bottom">
+		        <ul>
+		            <li><a href="#">о портале</a></li>
+		            <li><a href="#">реклама</a></li>
+		            <li><a href="#">правила</a></li>
+		            <li><a href="#">контакты</a></li>
+		        </ul>
+		    </div>
+		</div>
+
+	</div>
+</div><!-- .footer -->
 	
 
 
@@ -786,6 +729,54 @@ document.onclick=mclose;
 </div>
 </div>
 
+<script type="text/javascript">
+<!--
+var timeout        =500;
+var closetimer		= 0;
+var ddmenuitem     =0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility='hidden';
+
+	// get new layer and show it
+	ddmenuitem=document.getElementById(id);
+	ddmenuitem.style.visibility='visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility='hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer=window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer=null;
+	}
+}
+
+// close layer when click-out
+document.onclick=mclose; 
+// -->
+</script>
+
+<script>$('#exampleModal').arcticmodal();</script>
 
 
 </body>
