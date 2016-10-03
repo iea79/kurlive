@@ -6,7 +6,7 @@
 //  Skype: ivanov_ea
 //  ==========================
  */
-.grid:after, .shadow_boxes.w_50:after, .event_grid_bottm:after, .footer_content:after, .form__row:after, .row:after, .wrapper:after, .pagination:after, .header:after, .middle:after, .shadow_boxes:after, .general_thems:after, .left-sidebar:after, .num_list_title:after, .calendar .pagination:after, .right-sidebar:after, .stories:after, .foot-nav:after, .foot-nav ul:after, .categories:after, .foot_bottom:after, .katalog_diseases:after, .kliniks_topic:after, .doctor_topic:after {
+.grid:after, .shadow_boxes.w_50:after, .event_grid_bottm:after, .footer_content:after, .form__row:after, .row:after, .wrapper:after, .pagination:after, .header:after, .middle:after, .shadow_boxes:after, .general_thems:after, .left-sidebar:after, .num_list_title:after, .calendar .pagination:after, .right-sidebar:after, .stories:after, .foot-nav:after, .foot-nav ul:after, .categories:after, .foot_bottom:after, .katalog_diseases:after, .kliniks_topic:after, .doctor_topic:after, .clinic_address:after {
   content: '';
   display: table;
   clear: both;
@@ -81,6 +81,16 @@ ol, ul {
   margin: 0;
 }
 
+hr {
+  display: block;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0 solid #6e4682;
+  border-bottom-width: 1px;
+}
+
 .list {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -99,6 +109,41 @@ ol, ul {
 }
 .list > * + * {
   padding-top: 11px;
+}
+.list_circle li {
+  position: relative;
+  padding-left: 15px;
+}
+.list_circle li:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -3px;
+  width: 6px;
+  height: 6px;
+  background-color: #6e4682;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.list_circle li + li {
+  margin-top: 8px;
+}
+.list_checked li {
+  position: relative;
+  padding-left: 17px;
+}
+.list_checked li:before {
+  content: url('../images/galka.png?1475492439');
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -3px;
+  color: #6e4682;
+}
+.list_checked li + li {
+  margin-top: 6px;
 }
 
 p {
@@ -1254,6 +1299,26 @@ button:hover, .btn:hover {
   border-top: 2px solid #f6f6f6;
 }
 
+.events_row_item + .events_row_item {
+  margin-top: 12px;
+}
+.events_row_link {
+  color: #005e9f;
+  font-size: 17px;
+  margin-bottom: 3px;
+  display: block;
+}
+.events_row_text {
+  color: #252627;
+  font-size: 14px;
+}
+.events_row_date {
+  font-size: 10px;
+  font-weight: 400;
+  color: #999;
+  margin-bottom: 6px;
+}
+
 /* Right Sidebar
 -----------------------------------------------------------------------------*/
 .right-sidebar {
@@ -2214,7 +2279,7 @@ h3.kom_title {
 .detal_opisanie p {
   line-height: 1.2;
 }
-.detal_opisanie p + p {
+.detal_opisanie p + * {
   margin-top: 15px;
 }
 
@@ -2363,6 +2428,19 @@ ul.katalog li a:hover {
   -moz-column-gap: 74px;
   -webkit-column-gap: 74px;
   column-gap: 74px;
+  -moz-column-rule: 0px solid #ccc;
+  -webkit-column-rule: 0px solid #ccc;
+  column-rule: 0px solid #ccc;
+  margin-bottom: -13px;
+}
+.kliniks_topic--min, .doctor_topic--min {
+  margin-top: -3px;
+  -moz-columns: 250px 2;
+  -webkit-columns: 250px 2;
+  columns: 250px 2;
+  -moz-column-gap: 44px;
+  -webkit-column-gap: 44px;
+  column-gap: 44px;
   -moz-column-rule: 0px solid #ccc;
   -webkit-column-rule: 0px solid #ccc;
   column-rule: 0px solid #ccc;
@@ -3497,6 +3575,79 @@ select {
   display: block;
 }
 
+.clinics_search {
+  margin-bottom: -14px;
+}
+.clinics_search input[type="text"] {
+  width: 100%;
+  margin-bottom: 14px;
+}
+.clinics_search select {
+  width: 100%;
+  top: 0;
+  margin-bottom: 0;
+  background: #FFF url(../images/str_val.png) no-repeat 98% 60%;
+  padding: 0 11px;
+}
+.clinics_search ::-webkit-input-placeholder {
+  color: #a2a3a3;
+  font-size: 12px;
+  font-weight: 400;
+}
+.clinics_search :-moz-placeholder {
+  color: #a2a3a3;
+  font-size: 12px;
+  font-weight: 400;
+}
+.clinics_search ::-moz-placeholder {
+  color: #a2a3a3;
+  font-size: 12px;
+  font-weight: 400;
+}
+.clinics_search :-ms-input-placeholder {
+  color: #a2a3a3;
+  font-size: 12px;
+  font-weight: 400;
+}
+.clinics_search .grid .grid__wrapper {
+  padding-bottom: 14px;
+}
+.clinics_search .grid .grid__wrapper .btn {
+  margin-top: -5px;
+  background: #6e4682;
+  color: #fff;
+}
+.clinics_search .grid .grid__wrapper .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+.clinics_search label {
+  padding-right: 10px;
+  color: #6e4682;
+  font-size: 14px;
+  font-weight: 400;
+}
+.clinics_search label input[type="checkbox"] {
+  margin-right: 5px;
+  vertical-align: baseline;
+  border: 1px solid #6e4682;
+  display: inline-block;
+}
+.clinics_search label input[type="checkbox"]:checked {
+  background-color: #6e4682;
+}
+.clinics_search label input[type="checkbox"]:before {
+  content: '';
+}
+
+.form_grid_label {
+  color: #a2a3a3;
+  font-size: 12px;
+  font-weight: 400;
+  height: 22px;
+  padding-top: 2px;
+}
+
 span.i_serch {
   color: #1e1d1d;
   font-weight: bold;
@@ -3563,4 +3714,73 @@ a.all_doc {
 }
 a.all_doc:hover {
   text-decoration: none;
+}
+
+.clinic_address {
+  margin-bottom: 11px;
+}
+.clinic_address_map {
+  float: left;
+  width: 49%;
+  margin-right: 15px;
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.clinic_address_map > * {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.clinic_address_text {
+  overflow: hidden;
+}
+.clinic_address_title {
+  color: #6e4682;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+.clinic_address_list {
+  margin-bottom: 14px;
+}
+.clinic_address_list li {
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+.item_checked {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 11px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.item_checked:before {
+  content: url('../images/check.png?1475489130');
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.item_unchecked {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.item_unchecked:before {
+  content: url('../images/uncheck.png?1475489076');
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.panel_prymary {
+  background-color: #6e4682;
+  padding: 13px 12px;
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
 }

@@ -210,6 +210,19 @@ ol,ul {
 	margin: 0;
 }
 
+hr { 
+    display: block;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    // border-style: solid;
+    // border-width: 1px;
+    border: 0 solid #6e4682;
+    border-bottom-width: 1px;
+	// color: #6e4682;
+}
+
 .list {
 	margin-top: 25px;
 	margin-bottom: 25px;
@@ -226,6 +239,43 @@ ol,ul {
 		}
 		&+* {
 			padding-top: 11px;
+		}
+	}
+	&_circle {
+		li {
+			position: relative;
+			padding-left: 15px;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				margin-top: -3px;
+				width: 6px;
+				height: 6px;
+				background-color: #6e4682;
+				@include border-radius(6px);
+			}
+			&+li {
+				margin-top: 8px;
+			}
+		}
+	}
+	&_checked {
+		li {
+			position: relative;
+			padding-left: 17px;
+			&:before {
+				content: image-url('galka.png');
+				position: absolute;
+				top: 50%;
+				left: 0;
+				margin-top: -3px;
+				color: #6e4682;
+			}
+			&+li {
+				margin-top: 6px;
+			}
 		}
 	}
 }
@@ -1324,6 +1374,31 @@ button,.btn {
 	}
 }
 
+.events_row {
+	&_item {
+		&+.events_row_item {
+			margin-top: 12px;
+		}
+	}
+	&_link {
+		color: #005e9f;
+		font-size: 17px;
+		margin-bottom: 3px;
+		display: block;
+	}
+	&_text {
+		color: #252627;
+		font-size: 14px;
+	}
+	&_date {
+		font-size: 10px;
+		font-weight: 400;
+		color: #999;
+		margin-bottom: 6px;
+	}
+
+}
+
 
 /* Right Sidebar
 -----------------------------------------------------------------------------*/
@@ -2313,7 +2388,7 @@ h3.kom_title {
 	padding: 13px 14px;
 	p {
 		line-height: 1.2;
-		&+p {
+		&+* {
 			margin-top: 15px;
 		}
 	}
@@ -2454,7 +2529,12 @@ ul.katalog {
 .kliniks_topic,.doctor_topic {
 	margin-top: -3px;
 	@include columns-text(250px, 2, 74px, 0px, solid, #ccc);
-	margin-bottom: -13px;;
+	margin-bottom: -13px;
+	&--min {
+		margin-top: -3px;
+		@include columns-text(250px, 2, 44px, 0px, solid, #ccc);
+		margin-bottom: -13px;
+	}
 }
 
 .doctor_t, .klinik {
@@ -3616,6 +3696,68 @@ select {
 	display:block;
 }
 
+.clinics_search {
+	margin-bottom: -14px;
+	input[type="text"] {
+		width: 100%;
+		margin-bottom: 14px;
+	}
+	select {
+		width: 100%;
+		top: 0;
+		margin-bottom: 0;
+		background: #FFF url(../images/str_val.png) no-repeat 98% 60%;
+		padding: 0 11px;
+	}
+	@include placeholder {
+		color: #a2a3a3;
+		font-size: 12px;
+		font-weight: 400;
+	}
+	.grid {
+		.grid__wrapper {
+			padding-bottom: 14px;
+			.btn {
+				margin-top: -5px;
+				background: #6e4682;
+				color: #fff;
+				&:hover {
+					background-color: #fff;
+					color: #000;
+				}
+			}
+		}
+	}
+	label {
+		padding-right: 10px;
+		color: #6e4682;
+		font-size: 14px;
+		font-weight: 400;
+		input[type="checkbox"] {
+			margin-right: 5px;
+			vertical-align: baseline;
+			border: 1px solid #6e4682;
+			display:inline-block;
+			&:checked {
+				background-color: #6e4682;
+			}
+			&:before {
+				content: '';
+			}
+		}
+	}
+}
+
+.form_grid {
+	&_label {
+		color: #a2a3a3;
+		font-size: 12px;
+		font-weight: 400;
+		height: 22px;
+		padding-top: 2px;
+	}
+}
+
 span.i_serch{
 	color:#1e1d1d;
 	font-weight:bold;
@@ -3688,3 +3830,75 @@ a.all_doc{
 		text-decoration:none;
 	}
 }
+
+.clinic_address {
+	margin-bottom: 11px;
+	@extend %clear_a;
+	&_map {
+		float: left;
+		width: 49%;
+		margin-right: 15px;
+		@include box-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
+		&>* {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&_text {
+		overflow: hidden;
+	}
+	&_title {
+		color: #6e4682;
+		font-size: 18px;
+		font-weight: 400;
+		margin-bottom: 12px;
+	}
+	&_list {
+		margin-bottom: 14px;
+		li {
+			margin-bottom: 12px;
+			font-size: 12px;
+		}
+	}
+	&_check {
+	}
+}
+.minute {}
+.item_checked {
+	padding-left: 20px;
+	position: relative;
+	margin-bottom: 11px;
+	margin-right: 10px;
+	display:inline-block;
+	&:before {
+		content: image-url('check.png');
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.item_unchecked {
+	padding-left: 20px;
+	position: relative;
+	margin-bottom: 8px;
+	margin-right: 10px;
+	display:inline-block;
+	&:before {
+		content: image-url('uncheck.png');
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.panel_prymary {
+	background-color: #6e4682;
+	padding: 13px 12px;
+	color: white;
+	font-size: 14px;
+	line-height: 18px;
+}
+*+.panel_prymary {
+	// margin-top: 20px;
+}
+
