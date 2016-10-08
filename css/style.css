@@ -327,8 +327,8 @@ input[type=checkbox],
 input[type=radio] {
   padding: 0;
   display: inline-block;
-  height: 12px !important;
-  width: 12px !important;
+  height: 10px !important;
+  width: 10px !important;
   border: 1px solid #aaa;
   overflow: hidden;
   margin-top: -4px;
@@ -1360,7 +1360,7 @@ button:hover, .btn:hover {
   text-decoration: underline;
 }
 .tips .tip .tip_img {
-  width: 50px;
+  width: 40px;
 }
 
 .review_list li + li {
@@ -2077,6 +2077,10 @@ h3.kom_title {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+.koment_wr .koment_text .koment_text_wrap--valid {
+  height: auto;
+  margin-bottom: -20px;
+}
 .koment_wr .koment_text.open .koment_text_wrap {
   height: auto;
   padding-bottom: 7px;
@@ -2445,6 +2449,12 @@ ul.katalog li a:hover {
   -webkit-column-rule: 0px solid #ccc;
   column-rule: 0px solid #ccc;
   margin-bottom: -13px;
+}
+.kliniks_topic--min + .shadow_boxes_title, .doctor_topic--min + .shadow_boxes_title {
+  margin-top: 20px;
+}
+.kliniks_topic + .shadow_boxes_title, .doctor_topic + .shadow_boxes_title {
+  margin-top: 20px;
 }
 
 .doctor_t, .klinik {
@@ -3611,9 +3621,9 @@ select {
 }
 .clinics_search .grid .grid__wrapper {
   padding-bottom: 14px;
+  min-height: 40px;
 }
 .clinics_search .grid .grid__wrapper .btn {
-  margin-top: -5px;
   background: #6e4682;
   color: #fff;
 }
@@ -3621,11 +3631,16 @@ select {
   background-color: #fff;
   color: #000;
 }
+.clinics_search .grid .grid__wrapper label {
+  margin-top: 7px;
+  margin-bottom: 6px;
+}
 .clinics_search label {
   padding-right: 10px;
   color: #6e4682;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
+  display: inline-block;
 }
 .clinics_search label input[type="checkbox"] {
   margin-right: 5px;
@@ -3639,13 +3654,15 @@ select {
 .clinics_search label input[type="checkbox"]:before {
   content: '';
 }
+.clinics_search .text_muted {
+  font-size: 12px;
+}
 
 .form_grid_label {
   color: #a2a3a3;
   font-size: 12px;
   font-weight: 400;
   height: 22px;
-  padding-top: 2px;
 }
 
 span.i_serch {
@@ -3733,6 +3750,8 @@ a.all_doc:hover {
 }
 .clinic_address_text {
   overflow: hidden;
+  position: relative;
+  min-height: 276px;
 }
 .clinic_address_title {
   color: #6e4682;
@@ -3744,14 +3763,28 @@ a.all_doc:hover {
   margin-bottom: 14px;
 }
 .clinic_address_list li {
-  margin-bottom: 12px;
   font-size: 12px;
+}
+.clinic_address_list li + li {
+  margin-top: 12px;
+}
+
+.doctor_skill {
+  color: #252627;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0px 0 12px;
+}
+
+.text_muted {
+  color: #a2a3a3 !important;
 }
 
 .item_checked {
   padding-left: 20px;
   position: relative;
-  margin-bottom: 11px;
+  margin-bottom: 10px;
   margin-right: 10px;
   display: inline-block;
 }
@@ -3782,4 +3815,176 @@ a.all_doc:hover {
   color: white;
   font-size: 14px;
   line-height: 18px;
+}
+
+.select2-container {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  vertical-align: middle;
+  width: 100% !important;
+}
+.select2-container .selection {
+  display: block;
+}
+.select2-container .select2-selection--single {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  height: 26px;
+  user-select: none;
+  -webkit-user-select: none;
+  border: 1px solid #6e4682;
+  outline: 0;
+  padding: 5px 19px 5px 0;
+  color: #6e4682;
+}
+.select2-container .select2-selection--single:before {
+  content: url('../images/str_val.png?1471683469');
+  position: absolute;
+  right: 6px;
+  top: 10px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  display: block;
+  padding-left: 8px;
+  padding-right: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.select2-container .select2-selection--single .select2-selection__clear {
+  position: relative;
+}
+.select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered {
+  padding-right: 8px;
+  padding-left: 20px;
+}
+.select2-container .select2-selection--multiple {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  min-height: 32px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+  display: inline-block;
+  overflow: hidden;
+  padding-left: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.select2-container .select2-search--inline {
+  float: left;
+}
+.select2-container .select2-search--inline .select2-search__field {
+  box-sizing: border-box;
+  border: none;
+  font-size: 100%;
+  margin-top: 5px;
+  padding: 0;
+}
+.select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.select2-dropdown {
+  background-color: white;
+  border: 1px solid #aaa;
+  border-radius: 0px;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  left: -100000px;
+  width: 100%;
+  z-index: 1051;
+}
+
+.select2-results {
+  display: block;
+}
+
+.select2-results__options {
+  list-style: none;
+  margin: 0;
+  padding: 6px 0px;
+  max-height: 111px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.select2-results__option {
+  padding: 2px 6px;
+  user-select: none;
+  -webkit-user-select: none;
+  font-size: 13px;
+}
+.select2-results__option[aria-selected] {
+  cursor: pointer;
+}
+.select2-results__option:hover {
+  color: #6e4682;
+}
+
+.select2-container--open .select2-dropdown {
+  left: 0;
+}
+
+.select2-container--open .select2-dropdown--above {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.select2-container--open .select2-dropdown--below {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.select2-search--dropdown {
+  display: block;
+  padding: 4px;
+}
+.select2-search--dropdown .select2-search__field {
+  padding: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+.select2-search--dropdown.select2-search--hide {
+  display: none;
+}
+
+.select2-close-mask {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  z-index: 99;
+  background-color: #fff;
+  filter: alpha(opacity=0);
+}
+
+.select2-hidden-accessible {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
 }

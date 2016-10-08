@@ -373,8 +373,8 @@ input[type=checkbox],
 input[type=radio] {
 	padding: 0;
     display: inline-block;
-    height: 12px !important;
-    width: 12px !important;
+    height: 10px !important;
+    width: 10px !important;
     border: 1px solid #aaa;
     overflow: hidden;
     margin-top: -4px;
@@ -1441,7 +1441,7 @@ button,.btn {
 			}
 		}
 		.tip_img {
-			width: 50px;
+			width: 40px;
 		}
 	}
 }
@@ -2166,6 +2166,10 @@ h3.kom_title {
 			overflow: hidden;
 			line-height: 1.2;		
 			@include trs(.5s);
+			&--valid {
+				height: auto;
+				margin-bottom: -20px;
+			}
 		}
 		&.open {
 			.koment_text_wrap {
@@ -2534,6 +2538,12 @@ ul.katalog {
 		margin-top: -3px;
 		@include columns-text(250px, 2, 44px, 0px, solid, #ccc);
 		margin-bottom: -13px;
+		&+ .shadow_boxes_title {
+			margin-top: 20px;
+		}
+	}
+	&+ .shadow_boxes_title {
+		margin-top: 20px;
 	}
 }
 
@@ -3717,8 +3727,8 @@ select {
 	.grid {
 		.grid__wrapper {
 			padding-bottom: 14px;
+			min-height: 40px;
 			.btn {
-				margin-top: -5px;
 				background: #6e4682;
 				color: #fff;
 				&:hover {
@@ -3726,13 +3736,19 @@ select {
 					color: #000;
 				}
 			}
+			label {
+				margin-top: 7px;
+				margin-bottom: 6px;
+			}
 		}
 	}
 	label {
 		padding-right: 10px;
 		color: #6e4682;
-		font-size: 14px;
+		font-size: 13px;
 		font-weight: 400;
+		display: inline-block;
+		// margin-top: 7px;
 		input[type="checkbox"] {
 			margin-right: 5px;
 			vertical-align: baseline;
@@ -3746,6 +3762,9 @@ select {
 			}
 		}
 	}
+	.text_muted {
+		font-size: 12px;
+	}
 }
 
 .form_grid {
@@ -3754,7 +3773,7 @@ select {
 		font-size: 12px;
 		font-weight: 400;
 		height: 22px;
-		padding-top: 2px;
+		// padding-top: 7px;
 	}
 }
 
@@ -3847,6 +3866,9 @@ a.all_doc{
 	}
 	&_text {
 		overflow: hidden;
+		position: relative;
+		min-height: 276px;
+		// padding-bottom: 48px;
 	}
 	&_title {
 		color: #6e4682;
@@ -3857,18 +3879,37 @@ a.all_doc{
 	&_list {
 		margin-bottom: 14px;
 		li {
-			margin-bottom: 12px;
 			font-size: 12px;
+			&+li {
+				margin-top: 12px;
+			}
 		}
 	}
 	&_check {
+		// position: absolute;
+		// bottom: -10px;
+		// left: 0;
+		// width: 100%;
 	}
 }
+
+.doctor_skill {
+	color: #252627;
+	font-size: 14px;
+	font-weight: 700;
+	font-style: italic;
+	margin: 0px 0 12px;
+}
+
+.text_muted {
+	color: #a2a3a3 !important;
+}
+
 .minute {}
 .item_checked {
 	padding-left: 20px;
 	position: relative;
-	margin-bottom: 11px;
+	margin-bottom: 10px;
 	margin-right: 10px;
 	display:inline-block;
 	&:before {
@@ -3901,4 +3942,6 @@ a.all_doc{
 *+.panel_prymary {
 	// margin-top: 20px;
 }
+
+@import "select2";
 
