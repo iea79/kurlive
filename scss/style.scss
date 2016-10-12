@@ -971,23 +971,43 @@ button,.btn {
 .news_klinick {
 	margin-top: -5px;
 	margin-bottom: -14px;
+	margin-left: -10px;
+	// box-sizing: content-box;
+	@extend %clear_a;
+	&>div {
+		float: left;
+		width: 50%;
+		margin: 0;
+		padding-left: 10px;
+		display: block;
+		margin-bottom: 15px;
+		@extend %clear_a;
+	}
 }
 
 .img_klinick {
 	margin-bottom: 2px;
+	img {
+		// display: block;
+	}
+	a {
+		display: block;
+		overflow: hidden;
+		height: 110px;
+	}
 }
 
 .klinick_l {
-	display: inline-block;
-	width: 49%;
-	margin-bottom: 12px;
-	min-height: 160px;
+	// display: inline-block;
+	// width: 49%;
+	// margin-bottom: 12px;
+	// min-height: 160px;
 }
 
 .klinick_r {
-	display: inline-block;
-	width: 49%;
-	float: right;
+	// display: inline-block;
+	// width: 49%;
+	// float: right;
 }
 
 .klinik_link {

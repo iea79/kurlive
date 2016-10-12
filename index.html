@@ -343,7 +343,7 @@
             </div>
 		</div><!-- .left-sidebar -->
 
-		<div class="container">
+		<div class="container" style="width: 49%;">
 			<div class="content">
 
 				<!-- begin viewpoint -->
@@ -418,14 +418,14 @@
 
 					<div class="shadow_boxes_title">События и акции <a href="#" class="title_link">все события и акции</a></div>
 					
-					<div class="news_klinick">
+					<div class="news_klinick grid_height">
 
 						<div class="klinick_l">
 							<div class="img_klinick">
 								<a href="#"><img src="images/plage.jpg"/></a>
 							</div>
-							<a class="klinik_link" href="#"> Ученые выяснили, как сделть человека послушным</a>
-							<div class="klinik_text">Ученые из Швейцарии выяснили, сделать человека послушным. Исследователи из университета...</div>
+							<a class="klinik_link" href="#"> Ученые выяснили</a>
+							<div class="klinik_text">Ученые из Швейцарии выяснили. Исследователи из университета...</div>
 						
 						</div>
 						<div class="klinick_r">
@@ -677,6 +677,15 @@
 
 	$('#exampleModal').arcticmodal();
 	
+	 var mh = 0;
+	 $(".grid_height > div").each(function () {
+		var h_block = parseInt($(this).height());
+		if(h_block > mh) {
+		   mh = h_block;
+		};
+	 });
+	 $(".grid_height > div").height(mh);
+
 </script>
 
 </body>

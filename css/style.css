@@ -6,7 +6,7 @@
 //  Skype: ivanov_ea
 //  ==========================
  */
-.grid:after, .shadow_boxes.w_50:after, .event_grid_bottm:after, .footer_content:after, .form__row:after, .row:after, .wrapper:after, .pagination:after, .header:after, .middle:after, .shadow_boxes:after, .general_thems:after, .left-sidebar:after, .num_list_title:after, .calendar .pagination:after, .right-sidebar:after, .stories:after, .foot-nav:after, .foot-nav ul:after, .categories:after, .foot_bottom:after, .katalog_diseases:after, .kliniks_topic:after, .doctor_topic:after, .clinic_address:after {
+.grid:after, .shadow_boxes.w_50:after, .event_grid_bottm:after, .footer_content:after, .form__row:after, .row:after, .wrapper:after, .pagination:after, .header:after, .middle:after, .shadow_boxes:after, .general_thems:after, .news_klinick:after, .news_klinick > div:after, .left-sidebar:after, .num_list_title:after, .calendar .pagination:after, .right-sidebar:after, .stories:after, .foot-nav:after, .foot-nav ul:after, .categories:after, .foot_bottom:after, .katalog_diseases:after, .kliniks_topic:after, .doctor_topic:after, .clinic_address:after {
   content: '';
   display: table;
   clear: both;
@@ -909,23 +909,24 @@ button:hover, .btn:hover {
 .news_klinick {
   margin-top: -5px;
   margin-bottom: -14px;
+  margin-left: -10px;
+}
+.news_klinick > div {
+  float: left;
+  width: 50%;
+  margin: 0;
+  padding-left: 10px;
+  display: block;
+  margin-bottom: 15px;
 }
 
 .img_klinick {
   margin-bottom: 2px;
 }
-
-.klinick_l {
-  display: inline-block;
-  width: 49%;
-  margin-bottom: 12px;
-  min-height: 160px;
-}
-
-.klinick_r {
-  display: inline-block;
-  width: 49%;
-  float: right;
+.img_klinick a {
+  display: block;
+  overflow: hidden;
+  height: 110px;
 }
 
 .klinik_link {
